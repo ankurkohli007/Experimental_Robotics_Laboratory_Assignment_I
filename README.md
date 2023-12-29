@@ -24,6 +24,12 @@ The contents of this repository feature a software solution built on the Robot O
     <em>2D Environment</em>
 </p> 
 
+The above scenario highlights that:
+
+* The robot is located in room E and loads a map.
+* If the map is successfully loaded, the robot initiates movement within the corridors; otherwise, it remains within room E.
+* When the robot's battery is at full capacity, it proceeds to explore the various rooms; otherwise, it returns to room E for recharging.
+* After completing the recharging process, the robot resumes its exploration of the rooms.
 
 <p align="center">
   <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
