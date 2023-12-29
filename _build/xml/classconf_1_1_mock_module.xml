@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classconf_1_1_mock_module" kind="class" language="Python" prot="public">
+    <compoundname>conf::MockModule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MagicMock</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classconf_1_1_mock_module_1a1d929c94f183876f9246faf7c0fedc55" prot="private" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list conf.MockModule::__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conf.py" line="57" column="1" bodyfile="conf.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>conf.MockModule</label>
+        <link refid="classconf_1_1_mock_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MagicMock</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>conf.MockModule</label>
+        <link refid="classconf_1_1_mock_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MagicMock</label>
+      </node>
+    </collaborationgraph>
+    <location file="conf.py" line="56" column="1" bodyfile="conf.py" bodystart="56" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classconf_1_1_mock_module_1a1d929c94f183876f9246faf7c0fedc55" prot="private" virt="non-virtual"><scope>conf::MockModule</scope><name>__all__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

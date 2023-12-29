@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors" kind="class"><name>armor_api::armor_utils_client::ArmorUtilsClient::__TermColors</name>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors_1a619a6639c2f8f92f817d9c6572eb237a" kind="variable"><name>HEADER</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors_1aefd04985a2756eb94a282759864da2cb" kind="variable"><name>OKBLUE</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors_1a631e6497d2cf452a750d66f976e84385" kind="variable"><name>OKGREEN</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors_1a910f60d2358572f97bd0845f09d4857c" kind="variable"><name>WARNING</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors_1ad8595477d84e1a7944edfe8f81a0aea4" kind="variable"><name>FAIL</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors_1a9c8fa332d42642209dcfb02c82b357a6" kind="variable"><name>ENDC</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors_1a631cf4a227ba366f1ceb8bb00b28254d" kind="variable"><name>BOLD</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1_1_____term_colors_1a28a29ebdce61369590f205161e6aea30" kind="variable"><name>UNDERLINE</name></member>
+  </compound>
+  <compound refid="classscripts_1_1helper_1_1_action_client_helper" kind="class"><name>scripts::helper::ActionClientHelper</name>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a2a44abef2befe88cd8cfbb4cdc8517e4" kind="variable"><name>_service_name</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1ad0b46b10d9d0596bcf1a47528c70a1e3" kind="variable"><name>_mutex</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a996237a3caeecc7b322966906297e6cd" kind="variable"><name>_client</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a5182073e49894f2a2f2204906e0dc1a7" kind="variable"><name>_external_done_cb</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a39a3fde40d24dff191669243aadfd6b4" kind="variable"><name>_external_feedback_cb</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1aee12a3388737e53b9e7e3fd1126a8b34" kind="variable"><name>_is_running</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1aaf63e1fff68f178fe4e04b682b6b220c" kind="variable"><name>_is_done</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a2b9851a3cedeaa142eb5697d96e328f7" kind="variable"><name>_results</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a36cb72ca39003913e4bb84fe2a690c3b" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a80f26fd99e46d4806586f9c2ce8bd9e3" kind="function"><name>send_goal</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1abeb79d32bc78aba104ae1e92e13d7a42" kind="function"><name>cancel_goals</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1af3273b7ef317c3a9d013f51068624a19" kind="function"><name>reset_client_states</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a97de940e73e2e7b2578a5d2863ee3d12" kind="function"><name>feedback_callback_</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1ae91da8cd3bd112c6b994cdc05278934b" kind="function"><name>done_callback_</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a2bcb62a73fbd7bfc1cd9e307ccaa6fba" kind="function"><name>is_done</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1a89748f9e1b8c387dd8010f3304be543a" kind="function"><name>is_running</name></member>
+    <member refid="classscripts_1_1helper_1_1_action_client_helper_1ab2d184ef44061ee0c16c56d62c0d5f6e" kind="function"><name>get_results</name></member>
+  </compound>
+  <compound refid="classarmor__api_1_1armor__client_1_1_armor_client" kind="class"><name>armor_api::armor_client::ArmorClient</name>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a4aa034dfd63c295f18747cf7e7b2b4ef" kind="variable"><name>_handle</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1aad699d31f13c567067675986114f2b16" kind="variable"><name>_serial_handle</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a50dc7200c5756522134205fcad9559d3" kind="variable"><name>_service_name</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a0059723b7ddf18d1fc5e9a63fce426bc" kind="variable"><name>_serial_service_name</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1acf2bbfdc1bce69e31ffb4abbf2df79df" kind="variable"><name>_buffered_commands_list</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a40ca3f8e5a9ab3d65c77e4858d535779" kind="variable"><name>reference_name</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a99bc7c3c95717c99ccb73dfa7e445d94" kind="variable"><name>client_id</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1aacb177b5c9b2968b41491d58d89545b9" kind="variable"><name>timeout</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a0d24eba637b6a85afbc2e6d763ead20e" kind="variable"><name>manipulation</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a1f67596c11bdbf5c10b367d53481c2d3" kind="variable"><name>query</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a40fe59806af0d77072c14ed1f418d1a6" kind="variable"><name>utils</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1ad2572ed53d3de2eb347ffac95996c424" kind="variable"><name>timeout</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1ac530f89a2e81980ef3484b00f3b70361" kind="function"><name>__init__</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a43087b28f88045f26e19738e490fcbe4" kind="function"><name>call</name></member>
+    <member refid="classarmor__api_1_1armor__client_1_1_armor_client_1a4c46d50a6d0abdbba2538ffa2ac49081" kind="function"><name>_prepare_request</name></member>
+  </compound>
+  <compound refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client" kind="class"><name>armor_api::armor_manipulation_client::ArmorManipulationClient</name>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a79e729cb94c0d58b094ad2a6b4095b12" kind="variable"><name>_client</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a502c5f0547c5a125ff8ee71eab4d25d5" kind="function"><name>__init__</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a838c86bd80987124f99079377c0e1a1a" kind="function"><name>add_ind_to_class</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a782b9e79036681e0b5843e5227327e86" kind="function"><name>disj_inds_of_class</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a5cc24c19cd97e8b4573d08916e5835fa" kind="function"><name>add_objectprop_to_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a59f27571b6cf703c977a7499012f56e4" kind="function"><name>add_dataprop_to_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a8ffd218532e67bf47c4adb32cc1d2779" kind="function"><name>add_batch_dataprop_to_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a2813162318cc5273002159a5f0dec265" kind="function"><name>replace_objectprop_b2_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a92edeab75032afbd267e205a345dab60" kind="function"><name>replace_dataprop_b2_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a37b26fbf899745e4798f0027d79c8a4d" kind="function"><name>replace_one_dataprop_b2_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a5a9a16c71dd6b4f5bd6052057456a73b" kind="function"><name>replace_one_objectprop_b2_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a5d996c8c0a4e46405284f959525bc9ee" kind="function"><name>remove_dataprop_from_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a209e25049f32e4931db9b8b7c9674acf" kind="function"><name>remove_objectprop_from_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1aed759f30953773abf599082dc8ddbd6a" kind="function"><name>remove_batch_dataprop_to_ind</name></member>
+    <member refid="classarmor__api_1_1armor__manipulation__client_1_1_armor_manipulation_client_1a8e12bb41653ea5f4ff279141cab415dd" kind="function"><name>remove_ind_from_class</name></member>
+  </compound>
+  <compound refid="classarmor__api_1_1armor__exceptions_1_1_armor_py_exception" kind="class"><name>armor_api::armor_exceptions::ArmorPyException</name>
+    <member refid="classarmor__api_1_1armor__exceptions_1_1_armor_py_exception_1a8d82ddb2fb30134207c9e180d614eba4" kind="variable"><name>msg</name></member>
+    <member refid="classarmor__api_1_1armor__exceptions_1_1_armor_py_exception_1ae8977bd8f05ae51646afa56a14c56cec" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classarmor__api_1_1armor__query__client_1_1_armor_query_client" kind="class"><name>armor_api::armor_query_client::ArmorQueryClient</name>
+    <member refid="classarmor__api_1_1armor__query__client_1_1_armor_query_client_1a429f26db4142823d58837da87b3ae5f1" kind="variable"><name>_client</name></member>
+    <member refid="classarmor__api_1_1armor__query__client_1_1_armor_query_client_1a9dfd344b3e0b1bc13190654730759fa8" kind="function"><name>__init__</name></member>
+    <member refid="classarmor__api_1_1armor__query__client_1_1_armor_query_client_1a08205a074391e51560a22f05c3f4c227" kind="function"><name>ind_b2_class</name></member>
+    <member refid="classarmor__api_1_1armor__query__client_1_1_armor_query_client_1a88effa5efd5431851eebb6074163df99" kind="function"><name>dataprop_b2_ind</name></member>
+    <member refid="classarmor__api_1_1armor__query__client_1_1_armor_query_client_1a44fe7c07bb71f046e73e2583378efea8" kind="function"><name>objectprop_b2_ind</name></member>
+    <member refid="classarmor__api_1_1armor__query__client_1_1_armor_query_client_1a911b5bfa62873258e1d283bc3eb3c6fb" kind="function"><name>check_ind_exists</name></member>
+  </compound>
+  <compound refid="classarmor__api_1_1armor__exceptions_1_1_armor_service_call_error" kind="class"><name>armor_api::armor_exceptions::ArmorServiceCallError</name>
+    <member refid="classarmor__api_1_1armor__exceptions_1_1_armor_service_call_error_1a2e52af74206e564019f261e11ff55f79" kind="variable"><name>msg</name></member>
+    <member refid="classarmor__api_1_1armor__exceptions_1_1_armor_service_call_error_1a4b428d330758b5c3fe0ba395aa3560d9" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classarmor__api_1_1armor__exceptions_1_1_armor_service_internal_error" kind="class"><name>armor_api::armor_exceptions::ArmorServiceInternalError</name>
+    <member refid="classarmor__api_1_1armor__exceptions_1_1_armor_service_internal_error_1a5668c2b62eadc24b60c8456ae12f4c62" kind="variable"><name>msg</name></member>
+    <member refid="classarmor__api_1_1armor__exceptions_1_1_armor_service_internal_error_1a2586cf1605fbc7644d10491d5564738a" kind="variable"><name>code</name></member>
+    <member refid="classarmor__api_1_1armor__exceptions_1_1_armor_service_internal_error_1acc9abbf99724a3de8776e9304d170b16" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client" kind="class"><name>armor_api::armor_utils_client::ArmorUtilsClient</name>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1ae06ad75f9653b01e5ccd5684ca8edafc" kind="variable"><name>_client</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1afa8bdaf3252bb1199461fd8dc143120f" kind="function"><name>__init__</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1a6c2fe0c604513040cc50b9328aa22156" kind="function"><name>apply_buffered_changes</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1a8c696cc0f2bbe4c01fa9e73e4992455c" kind="function"><name>sync_buffered_reasoner</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1a7f2cda0054c2d106c831462166056c41" kind="function"><name>save_ref_with_inferences</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1acb51d0d1292825fd4a96c8fddf3e697b" kind="function"><name>save</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1ad187705429c497b8b9d5622a4167c1a8" kind="function"><name>load_ref_from_file</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1ac41f9254c044369c968e34f052ad18d1" kind="function"><name>mount_on_ref</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1a9d96024401aacf9a4f07b448ca971db7" kind="function"><name>unmount_from_ref</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1a5bff71857c916177525a0a54aeaac318" kind="function"><name>set_log_to_terminal</name></member>
+    <member refid="classarmor__api_1_1armor__utils__client_1_1_armor_utils_client_1a89ab9ee17a7e13b2e9015e00ad01a710" kind="function"><name>set_log_to_file</name></member>
+  </compound>
+  <compound refid="classscripts_1_1finite__statemachine_1_1_charge_management" kind="class"><name>scripts::finite_statemachine::ChargeManagement</name>
+    <member refid="classscripts_1_1finite__statemachine_1_1_charge_management_1a15034befe5c2a96197b2b670d293cc96" kind="variable"><name>_helper</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_charge_management_1a2fe33e2f406e4842ff2f81fba921591f" kind="variable"><name>_knowledge</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_charge_management_1a9e62c8dd495341cfd6db2711cdbf0d33" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_charge_management_1a80d7f05c95740a8c84a843f0c9a189c4" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="classscripts_1_1finite__statemachine_1_1_corridor_path_follower" kind="class"><name>scripts::finite_statemachine::CorridorPathFollower</name>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_path_follower_1a8e995eb2aa487bab0562a4a20a761ef1" kind="variable"><name>_helper</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_path_follower_1af8e23b7a4690f45fce3910d5646236c3" kind="variable"><name>_knowledge</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_path_follower_1aea88f0f2813e2eadf64bc5dd555b4aa9" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_path_follower_1a4ee8579a444766cb37c20df81dcc49e1" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="classscripts_1_1finite__statemachine_1_1_corridor_room_decision_maker" kind="class"><name>scripts::finite_statemachine::CorridorRoomDecisionMaker</name>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_room_decision_maker_1aff5b88764fc3f24bc8282eb59b1ee431" kind="variable"><name>_helper</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_room_decision_maker_1a985182f538473cf1770da9ea445da47e" kind="variable"><name>_knowledge</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_room_decision_maker_1ab3f9da93a6e18c6cbb2c839dd4656fd9" kind="variable"><name>environment_size</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_room_decision_maker_1a3ae3b58c67aefe9d826329ada8887d7a" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_corridor_room_decision_maker_1a2af7d90b8ec6db63537882b58fbf80c3" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="classscripts_1_1finite__statemachine_1_1_environment_initializer" kind="class"><name>scripts::finite_statemachine::EnvironmentInitializer</name>
+    <member refid="classscripts_1_1finite__statemachine_1_1_environment_initializer_1a597dd3f818a6c5116b95fd3026e52362" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_environment_initializer_1a1b8dcdefd2865127a55edcfb4db2feb2" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="classscripts_1_1helper_1_1_interface_helper" kind="class"><name>scripts::helper::InterfaceHelper</name>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1a4af586f9c051bc6ed185497516e933fe" kind="variable"><name>mutex</name></member>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1a1b5ddbc05746177a9923c3d1a88a2447" kind="variable"><name>planner_client</name></member>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1a82111907b4975d2ef2394ae36ddca117" kind="variable"><name>controller_client</name></member>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1a1a676e1018646046bc82434288d2051f" kind="variable"><name>_battery_low</name></member>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1a596cfc29bec05654fcd9f9696f86bfec" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1aeb73b53d49243ab745d169b4fa04948a" kind="function"><name>reset_states</name></member>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1a01b2d00360a4ae90ba428e4012cfa3cc" kind="function"><name>battery_callback_</name></member>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1af0f568770822d23f775f79983c1343f4" kind="function"><name>is_battery_low</name></member>
+    <member refid="classscripts_1_1helper_1_1_interface_helper_1a2ed15ac28e35d484f946799b2eaefefc" kind="function"><name>init_robot_pose</name></member>
+  </compound>
+  <compound refid="classscripts_1_1helper_1_1_knowledge_graph_helper" kind="class"><name>scripts::helper::KnowledgeGraphHelper</name>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1af9c967facc31ea51b8b123fda913a35c" kind="variable"><name>survillancerobot</name></member>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a7ce28a25b505800359913fdb4ecf2bd5" kind="variable"><name>survillancerobot_position</name></member>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a1536ad7dfb16369233e3dcd3f8e8683d" kind="variable"><name>survillancerobot_reachable_rooms</name></member>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a87457a40fc97baf84ef18b31b872d9ad" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a5aebb6a31b001f150d049a9c4233dd17" kind="function"><name>list_section_formatter</name></member>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1ad84108c8be0162152693df1a5a6153a6" kind="function"><name>obtainLocation</name></member>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a3586484e15101ab72ef7a414ccd8a413" kind="function"><name>choose_destination</name></member>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a68268017b3ad54dc336f8938fb3db939" kind="function"><name>relocate</name></member>
+    <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a53d17bf95caf35a973a6decf1b11ea0b" kind="function"><name>headToRechargeStation</name></member>
+  </compound>
+  <compound refid="classconf_1_1_mock_module" kind="class"><name>conf::MockModule</name>
+    <member refid="classconf_1_1_mock_module_1a1d929c94f183876f9246faf7c0fedc55" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="classscripts_1_1robot__states_1_1_robot_state" kind="class"><name>scripts::robot_states::RobotState</name>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a357082b6625b42db6d4bf16bfbe61f5e" kind="variable"><name>_pose</name></member>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a87ef43e30268956bedcb3218f0353a2f" kind="variable"><name>_battery_low</name></member>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a9707315a45d5b71b7ba19518bb05fc0b" kind="variable"><name>_randomness</name></member>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a4b57c645acb463e10f93cbde92fca4b1" kind="variable"><name>_random_battery_time</name></member>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a289b65abb54f7189f8429607f069fac0" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a19c0c35d918aaaa53eecfd0096d95c6c" kind="function"><name>set_pose</name></member>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a28bdc89286a0944832c908a6339e8578" kind="function"><name>get_pose</name></member>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a50c738916e44a5d455f715c9b245c801" kind="function"><name>is_battery_low_</name></member>
+    <member refid="classscripts_1_1robot__states_1_1_robot_state_1a68bf48ecc86f4ac0c8eb1eb7ca686896" kind="function"><name>battery_notifier_</name></member>
+  </compound>
+  <compound refid="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder" kind="class"><name>scripts::finite_statemachine::UrgentPathfinder</name>
+    <member refid="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder_1a797a623189e1b3a293d6f7746e91f165" kind="variable"><name>_helper</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder_1aa4db4779fc3cded8b1884dc97c781997" kind="variable"><name>_knowledge</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder_1adbda0d0e119e86cdb3877301c01a3b48" kind="function"><name>__init__</name></member>
+    <member refid="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder_1aa1c15c4687788b9b9a402daec1c4919c" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="namespacearmor__api" kind="namespace"><name>armor_api</name>
+    <member refid="namespacearmor__api_1a5f100377f44c4b765c3735a6029cad35" kind="variable"><name>__author__</name></member>
+    <member refid="namespacearmor__api_1a01b53f65fa3073b26585d82b2b381215" kind="variable"><name>__copyright__</name></member>
+    <member refid="namespacearmor__api_1a1c730ef977c7a2027cd94ff6f8180fed" kind="variable"><name>__license__</name></member>
+    <member refid="namespacearmor__api_1a6957c36d8c4c72c90085cf77ca1f84fe" kind="variable"><name>__version__</name></member>
+    <member refid="namespacearmor__api_1a4da7e03143fecbf46b9f199d092a9ffb" kind="variable"><name>__maintainer__</name></member>
+    <member refid="namespacearmor__api_1a86a58f4312604fa8b127f358232d8d9e" kind="variable"><name>__email__</name></member>
+    <member refid="namespacearmor__api_1a7d8d163804953f7cf9e71003dfdad5de" kind="variable"><name>__status__</name></member>
+    <member refid="namespacearmor__api_1aef048da471eb586e98fbd8f680bfffef" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacearmor__api_1_1armor__client" kind="namespace"><name>armor_api::armor_client</name>
+    <member refid="namespacearmor__api_1_1armor__client_1aa7002d3701ef8f00c5564646d465d1f2" kind="variable"><name>__author__</name></member>
+    <member refid="namespacearmor__api_1_1armor__client_1a4a9a15ba8f5291d8e741a0e6f473c92f" kind="variable"><name>__copyright__</name></member>
+    <member refid="namespacearmor__api_1_1armor__client_1a40309b97ffc69d84837b8f6726f4eeed" kind="variable"><name>__license__</name></member>
+    <member refid="namespacearmor__api_1_1armor__client_1ae0299f3128f3c2cbf066769370b05ec3" kind="variable"><name>__version__</name></member>
+    <member refid="namespacearmor__api_1_1armor__client_1adea0b951978b07f0f11f5ea6ebc4ecf6" kind="variable"><name>__maintainer__</name></member>
+    <member refid="namespacearmor__api_1_1armor__client_1a84b5050d8a73dffa57d679d8622bb750" kind="variable"><name>__email__</name></member>
+    <member refid="namespacearmor__api_1_1armor__client_1ae7e62db7fe1db3ec36c4c9f087fdae5f" kind="variable"><name>__status__</name></member>
+  </compound>
+  <compound refid="namespacearmor__api_1_1armor__exceptions" kind="namespace"><name>armor_api::armor_exceptions</name>
+    <member refid="namespacearmor__api_1_1armor__exceptions_1a5f137c7ad6467bb455a1de29dd60e8ec" kind="variable"><name>__author__</name></member>
+    <member refid="namespacearmor__api_1_1armor__exceptions_1a5d40b856a6a3c92de19b8abb7119bd0a" kind="variable"><name>__copyright__</name></member>
+    <member refid="namespacearmor__api_1_1armor__exceptions_1a46a3e8257f405036ce0960c9b266e3c0" kind="variable"><name>__license__</name></member>
+    <member refid="namespacearmor__api_1_1armor__exceptions_1afb8bc77af7359dd76ec783dbeb4f4963" kind="variable"><name>__version__</name></member>
+    <member refid="namespacearmor__api_1_1armor__exceptions_1a4638efbd666d348e93c35a8b13e01da2" kind="variable"><name>__maintainer__</name></member>
+    <member refid="namespacearmor__api_1_1armor__exceptions_1af2e633ceae594ba72e4c1666f99f6884" kind="variable"><name>__email__</name></member>
+    <member refid="namespacearmor__api_1_1armor__exceptions_1a9fc6755b12d1320d4f60134d34a24eca" kind="variable"><name>__status__</name></member>
+  </compound>
+  <compound refid="namespacearmor__api_1_1armor__manipulation__client" kind="namespace"><name>armor_api::armor_manipulation_client</name>
+    <member refid="namespacearmor__api_1_1armor__manipulation__client_1a24c3a7208c343ed14a61ec77d99842f2" kind="variable"><name>__author__</name></member>
+    <member refid="namespacearmor__api_1_1armor__manipulation__client_1afd11c8e3725afd1fec83eeb419f11726" kind="variable"><name>__copyright__</name></member>
+    <member refid="namespacearmor__api_1_1armor__manipulation__client_1a569df08746f0deb9b87316dc8c72cd46" kind="variable"><name>__license__</name></member>
+    <member refid="namespacearmor__api_1_1armor__manipulation__client_1a7579176cefbdc5e4caa5e83785509533" kind="variable"><name>__version__</name></member>
+    <member refid="namespacearmor__api_1_1armor__manipulation__client_1a526e97cd1f3285b3ed9df99de362d1dd" kind="variable"><name>__maintainer__</name></member>
+    <member refid="namespacearmor__api_1_1armor__manipulation__client_1a1a75c773d3ed4829169abede766cf233" kind="variable"><name>__email__</name></member>
+    <member refid="namespacearmor__api_1_1armor__manipulation__client_1aa45fba8d237bb86df94fcdad0ff44cbd" kind="variable"><name>__status__</name></member>
+  </compound>
+  <compound refid="namespacearmor__api_1_1armor__query__client" kind="namespace"><name>armor_api::armor_query_client</name>
+    <member refid="namespacearmor__api_1_1armor__query__client_1a6594df428b91029ddd946e402ac6bf31" kind="variable"><name>__author__</name></member>
+    <member refid="namespacearmor__api_1_1armor__query__client_1ab4261a503b8ce279c18b981b40d4d593" kind="variable"><name>__copyright__</name></member>
+    <member refid="namespacearmor__api_1_1armor__query__client_1aea1bfd2dcf9787b0d3cddc3ee7e0056c" kind="variable"><name>__license__</name></member>
+    <member refid="namespacearmor__api_1_1armor__query__client_1a10299defc002724b2577bc546bcc6a90" kind="variable"><name>__version__</name></member>
+    <member refid="namespacearmor__api_1_1armor__query__client_1a98acbb7176ec4367e3d8a10dfacb82e8" kind="variable"><name>__maintainer__</name></member>
+    <member refid="namespacearmor__api_1_1armor__query__client_1aa93528fe6d02609051d6890d418ef756" kind="variable"><name>__email__</name></member>
+    <member refid="namespacearmor__api_1_1armor__query__client_1a59144305665b3f341269fe5246f83447" kind="variable"><name>__status__</name></member>
+  </compound>
+  <compound refid="namespacearmor__api_1_1armor__utils__client" kind="namespace"><name>armor_api::armor_utils_client</name>
+    <member refid="namespacearmor__api_1_1armor__utils__client_1a923c3fb17d0398be1b3b458b33dd29c8" kind="variable"><name>__author__</name></member>
+    <member refid="namespacearmor__api_1_1armor__utils__client_1aa730152671b8bbc0ec7b34a31a1e08e8" kind="variable"><name>__copyright__</name></member>
+    <member refid="namespacearmor__api_1_1armor__utils__client_1a7b6e9f386ed4f76f4458a495485a7e8b" kind="variable"><name>__license__</name></member>
+    <member refid="namespacearmor__api_1_1armor__utils__client_1a157705608b82cf86d95563f6cdde499c" kind="variable"><name>__version__</name></member>
+    <member refid="namespacearmor__api_1_1armor__utils__client_1a54320c6fb9d041b64c3c65cb19233219" kind="variable"><name>__maintainer__</name></member>
+    <member refid="namespacearmor__api_1_1armor__utils__client_1ad4109616435cacefb947ce5269af3047" kind="variable"><name>__email__</name></member>
+    <member refid="namespacearmor__api_1_1armor__utils__client_1a16f318542d30be27976b125f8414cd82" kind="variable"><name>__status__</name></member>
+  </compound>
+  <compound refid="namespacearmor__api_1_1client__test" kind="namespace"><name>armor_api::client_test</name>
+    <member refid="client__test_8py_1a091f7e4fbbb57b49ea46cc2f723bb3c5" kind="variable"><name>path</name></member>
+    <member refid="client__test_8py_1a30367e29cc8a9c3c71821517c98fcba6" kind="variable"><name>client</name></member>
+  </compound>
+  <compound refid="namespaceassignment__1" kind="namespace"><name>assignment_1</name>
+  </compound>
+  <compound refid="namespaceassignment__1_1_1architecture__name__mapper" kind="namespace"><name>assignment_1::architecture_name_mapper</name>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a3689443e2816016ba4f40aecd5cd28d6" kind="variable"><name>PARAM_ENVIRONMENT_SIZE</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a902a850ade85be5f6a3cbe2edac029c9" kind="variable"><name>PARAM_INITIAL_POSE</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a78b1d331403f664fd679d91b0226717c" kind="variable"><name>PARAM_RANDOM_ACTIVE</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a4a1d75b245b57155475bc80712b8502c" kind="variable"><name>NODE_ROBOT_STATE</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a3429096748363657d095f43297722a90" kind="variable"><name>SERVER_GET_POSE</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a4fa7b503e5ee766ed3c34aa6b3cac364" kind="variable"><name>SERVER_SET_POSE</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a0969b71248af073e22adbffbdfd1a0a0" kind="variable"><name>TOPIC_BATTERY_LOW</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a35cc4b839364e270576971cb3d209fa6" kind="variable"><name>ACTION_MOVEBASE</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a05486d02f34da255bfe6b14a635ff218" kind="variable"><name>SLEEP_TIME</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a4331cb222779655b8d5c4956c89821ba" kind="variable"><name>PARAM_BATTERY_TIME</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a351aaf18a8305d35bb752b234e35c91d" kind="variable"><name>MONITOR_TIME</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1abbb0a58d55ca40f2feda27aa3934c546" kind="variable"><name>NODE_PLANNER</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1ace9d1432858a46911b3029b183e00aaf" kind="variable"><name>ACTION_PLANNER</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a6ebe1eb562098e2f332befcf7f60f257" kind="variable"><name>PARAM_PLANNER_POINTS</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a2ad4226e40ae9e73817dfa12857fcc0b" kind="variable"><name>PARAM_PLANNER_TIME</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1ac584772c04fcedf83fffccbd36a24cac" kind="variable"><name>NODE_CONTROLLER</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1ab4f30aa01937417b10ab90d602146667" kind="variable"><name>ACTION_CONTROLLER</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1af581c1f4b05d3b509d094eed16036580" kind="variable"><name>PARAM_CONTROLLER_TIME</name></member>
+    <member refid="namespaceassignment__1_1_1architecture__name__mapper_1a878608bbc9a39ac4bba58349e7476d97" kind="function"><name>tag_log</name></member>
+  </compound>
+  <compound refid="namespaceconf" kind="namespace"><name>conf</name>
+    <member refid="conf_8py_1a332f430461432dc465213f884a1e4967" kind="variable"><name>shell</name></member>
+    <member refid="conf_8py_1a45653c983098153b78e33600e39230eb" kind="variable"><name>project</name></member>
+    <member refid="conf_8py_1a33fa97cf51dcb25970fbf53f10159589" kind="variable"><name>copyright</name></member>
+    <member refid="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
+    <member refid="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
+    <member refid="conf_8py_1ae475e080536acb271a0a0efe56c3ba42" kind="variable"><name>extensions</name></member>
+    <member refid="conf_8py_1aa0ec3e2d302f8100428e8ffcf81824b6" kind="variable"><name>MOCK_MODULES</name></member>
+    <member refid="conf_8py_1a5423ed13ece210555067edc853325f3c" kind="variable"><name>autodoc_mock_functions</name></member>
+    <member refid="conf_8py_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
+    <member refid="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
+    <member refid="conf_8py_1a3117edf4443d9b8c70a9f0f44294ba79" kind="variable"><name>highlight_language</name></member>
+    <member refid="conf_8py_1a10af2a769eb3bd3322e874f677e435b1" kind="variable"><name>source_suffix</name></member>
+    <member refid="conf_8py_1a6fcd7e5236f355b1e1a55f9d95988810" kind="variable"><name>master_doc</name></member>
+    <member refid="conf_8py_1a6c3bfcc1a44546c1c75ce20f55bd0fd6" kind="variable"><name>html_theme</name></member>
+    <member refid="conf_8py_1af4fb5d8851ccaade135c2668dd3ced41" kind="variable"><name>html_static_path</name></member>
+    <member refid="conf_8py_1a8375f4f963de3ac8026eaa9beced9564" kind="variable"><name>intersphinx_mapping</name></member>
+    <member refid="conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" kind="variable"><name>todo_include_todos</name></member>
+    <member refid="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" kind="variable"><name>breathe_projects</name></member>
+    <member refid="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" kind="variable"><name>breathe_default_project</name></member>
+    <member refid="conf_8py_1a54585428ce84441199d9dfd7087e2243" kind="variable"><name>breathe_default_members</name></member>
+    <member refid="conf_8py_1aacdaa386c959c6f32b106995c15eeb3a" kind="function"><name>skip_mocked_members</name></member>
+    <member refid="conf_8py_1ab10c3cab2b831ad54a5b330ce0f414e0" kind="function"><name>setup</name></member>
+  </compound>
+  <compound refid="namespacescripts" kind="namespace"><name>scripts</name>
+  </compound>
+  <compound refid="namespacescripts_1_1finite__statemachine" kind="namespace"><name>scripts::finite_statemachine</name>
+    <member refid="namespacescripts_1_1finite__statemachine_1a04169f776506a682c1c3e7536a33a3e3" kind="variable"><name>INITIALIZING</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a3b82c7a24ea5fb8ebd493ff344f4e5b2" kind="variable"><name>CHOOSING_PATH</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a672b4f306c73a469f629092d706783df" kind="variable"><name>URGENT_SELECTION</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1aeaa23f44b3b63d595cb58807b61e16f5" kind="variable"><name>MOVING_TO_CORRIDOR</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a4fec927f3e02cbb7501cd151863c5423" kind="variable"><name>MOVING_TO_URGENT</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a872723eb0b474357a9dbfdacc7e31709" kind="variable"><name>SURVEY_IN_PROGRESS</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a88d0e861e3adcc0b36a7adc0d42bf6a2" kind="variable"><name>RECHARGING_BATTERY</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1aa83d92c52667f4111c83b65d5e3de194" kind="variable"><name>START_URGENT_OP</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1ace21f5750e8fd06c3c52566e5856ae8f" kind="variable"><name>START_CORRIDOR_OP</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a23f5c7b9d5f2852acdd6ab00d510d64f" kind="variable"><name>IN_ROOM</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a3fb33dc77bde67b196b56cd6f6fadf53" kind="variable"><name>INITIALIZATION_COMPLETE</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a4c3419e6dfa580337061e99f5548f140" kind="variable"><name>CORRIDOR_CHOICE_MADE</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1aa7be23d3126058cb45e1560c2c0fb52b" kind="variable"><name>MOVING_IN_CORRIDOR</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a58e4187058370094cf237099e0717eda" kind="variable"><name>URGENT_MOVE</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1ab6dbc00be4d1b7ceb8ec0422c6ba4eb6" kind="variable"><name>URGENT_CHOICE_MADE</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a04cc3880047b11a94f7c515a3b936fda" kind="variable"><name>LOW_BATTERY_WARNING</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a289a7ed8bc0f5450dae53894aad40b40" kind="variable"><name>RECHARGING_IN_PROGRESS</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1ad78da5d0502ce3e0c16d73dc08e3d668" kind="variable"><name>RECHARGING_COMPLETE</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a969605c00ff8e3f3a8e3d0336d9096b0" kind="variable"><name>LOOP_SLEEP_TIME</name></member>
+    <member refid="namespacescripts_1_1finite__statemachine_1a80e10c493fc88cefd86be2e42fd85a4c" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacescripts_1_1helper" kind="namespace"><name>scripts::helper</name>
+    <member refid="namespacescripts_1_1helper_1a6ae573fac116eebf8624b0616c747aa8" kind="variable"><name>client</name></member>
+  </compound>
+  <compound refid="namespacescripts_1_1load__environment" kind="namespace"><name>scripts::load_environment</name>
+    <member refid="namespacescripts_1_1load__environment_1a2860c5c4fd7cbbd38924dd8a4a4a1cd1" kind="variable"><name>client</name></member>
+    <member refid="namespacescripts_1_1load__environment_1a7af971dfc7cf29d2d815be85f64368af" kind="variable"><name>path</name></member>
+    <member refid="namespacescripts_1_1load__environment_1add645c9db705915749997032ec1b6441" kind="function"><name>LoadKnowledgeGraph</name></member>
+  </compound>
+  <compound refid="namespacescripts_1_1robot__states" kind="namespace"><name>scripts::robot_states</name>
+    <member refid="namespacescripts_1_1robot__states_1a64a8499e15271245694d48b200f24194" kind="variable"><name>LOG_TAG</name></member>
+    <member refid="namespacescripts_1_1robot__states_1a3fdbd716f2227a009ab44c4a82e43e77" kind="variable"><name>helper</name></member>
+    <member refid="namespacescripts_1_1robot__states_1ab2796d79848babdbc68e3415a976b54e" kind="variable"><name>robot_pose_param</name></member>
+  </compound>
+  <compound refid="namespacesetup" kind="namespace"><name>setup</name>
+    <member refid="setup_8py_1a504ffa482edfe0eff08f64b2f5dff0e9" kind="variable"><name>setup_args</name></member>
+  </compound>
+  <compound refid="_c_make_lists_8txt" kind="file"><name>CMakeLists.txt</name>
+  </compound>
+  <compound refid="conf_8py" kind="file"><name>conf.py</name>
+  </compound>
+  <compound refid="scripts_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="utilities_2armor__api_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="utilities_2assignment__1_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="finite__statemachine_8py" kind="file"><name>finite_statemachine.py</name>
+  </compound>
+  <compound refid="helper_8py" kind="file"><name>helper.py</name>
+  </compound>
+  <compound refid="load__environment_8py" kind="file"><name>load_environment.py</name>
+  </compound>
+  <compound refid="robot__states_8py" kind="file"><name>robot_states.py</name>
+  </compound>
+  <compound refid="setup_8py" kind="file"><name>setup.py</name>
+  </compound>
+  <compound refid="armor__client_8py" kind="file"><name>armor_client.py</name>
+  </compound>
+  <compound refid="armor__exceptions_8py" kind="file"><name>armor_exceptions.py</name>
+  </compound>
+  <compound refid="armor__manipulation__client_8py" kind="file"><name>armor_manipulation_client.py</name>
+  </compound>
+  <compound refid="armor__query__client_8py" kind="file"><name>armor_query_client.py</name>
+  </compound>
+  <compound refid="armor__utils__client_8py" kind="file"><name>armor_utils_client.py</name>
+  </compound>
+  <compound refid="client__test_8py" kind="file"><name>client_test.py</name>
+  </compound>
+  <compound refid="architecture__name__mapper_8py" kind="file"><name>architecture_name_mapper.py</name>
+  </compound>
+  <compound refid="dir_24fab40fc2732f128295dd90e2e29ba6" kind="dir"><name>utilities/armor_api</name>
+  </compound>
+  <compound refid="dir_eb3f4ad10a695a66749a76a2f4c5f387" kind="dir"><name>utilities/assignment_1</name>
+  </compound>
+  <compound refid="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir"><name>scripts</name>
+  </compound>
+  <compound refid="dir_df38b2a5d584e0f6066b4518b95c638b" kind="dir"><name>utilities</name>
+  </compound>
+</doxygenindex>
