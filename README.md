@@ -107,6 +107,8 @@ The reader or user can find a detailed decription of these two nodes in the [REA
 
 ## Installation & Running
 
+### Installation
+
 To utilize this software effectively, the user should adhere to the following steps for installing the necessary packages and repositories.
 
 * As the author opted to utilize the files [``planner.py``](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/planner.py) and [``controller.py``](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/controller.py) from the [arch_skeleton](https://github.com/buoncubi/arch_skeleton) repository, along with the [topological_map.owl](https://github.com/buoncubi/topological_map/blob/main/topological_map.owl) file from the [topological_map](https://github.com/buoncubi/topological_map) repository— both authored by [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) and the user is required to clone the aforementioned repositories along with the current one into the ROS workspace.
@@ -163,6 +165,18 @@ def disj_inds(self, inds):
 ```
 
 The user should copy and add the above function in the script to make the software work correctly.
+
+### Running 
+
+To initialize the software architecture in conjunction with the finite state machine representation, first install ``xterm`` if it is not installed by the command ``sudo apt-get install -y xterm`` and then execute the following commands:
+
+```bashscript
+$ source devel/setup.bash
+```
+```bashscript
+$ roslaunch assignment1 exprob_assig1.launch
+```
+
 
 
 
