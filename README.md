@@ -217,7 +217,7 @@ The figure above explains the visual representation of SMACH state machines, aid
     <em>Tree View of smach_viewer</em>
 </p> 
 
-The figure above offering a visual breakdown of states and transitions. Let's breakdown tree view, first is ``SM_ROOT`` which ``LOADING_MAP``. Furthermore, it is ``DETERMINING_CORRIDOR_OR_ROOM``. This followed by ``ON_CORRIDOR_MOVE`` and this followed by ``ON_URGENT_MOVE``. Lastly, the ``RECHARGING_STATION``.
+The figure above offering a visual breakdown of states and transitions in tree view format. Let's breakdown this tree view, first is ``SM_ROOT`` which ``LOADING_MAP``. Furthermore, it is ``DETERMINING_CORRIDOR_OR_ROOM``. This followed by ``ON_CORRIDOR_MOVE`` and this followed by ``ON_URGENT_MOVE``. Lastly, the ``RECHARGING_STATION``.
 
 
 
