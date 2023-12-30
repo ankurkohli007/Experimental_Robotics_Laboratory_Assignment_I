@@ -69,7 +69,7 @@ The low battery signal takes precedence as the highest-priority signal. Therefor
 
 In the next section, a detailed description of all the components depicted in the diagrams is provided.
 
-### Component
+## Component
 
 #### ``finite_statemachine`` node & ``helper`` node
 
@@ -103,7 +103,24 @@ The reader or user can find a detailed decription of these two nodes in the [REA
 * ``finite_statemachine.py``: A finite state machine is a computational model that represents an entity's behaviour through a finite number of states and transitions between them. Also, Python module for implementing the Finite State Machine.
 * ``robot_states.py``: robot_states typically refers to a component or module in a robotic system responsible for managing and updating various states and information related to the robot, such as its pose, battery level, and operational status. Also, a Python module responsible for publishing the state of the battery, typically utilizing a ROS publisher to broadcast this information.
 * ``helper.py``: A node equipped with Interface Helper and ActionClient Helper to facilitate the Finite State Machine by providing information about the action client's status and executing battery-related stimuli.
-* ``load_environment.py``: "load_environment" typically refers to a process of loading or importing ontological data(environment), often used in knowledge management systems or semantic web applications. Also, This node helps to load the environmental map to the robot
+* ``load_environment.py``: "load_environment" typically refers to a process of loading or importing ontological data(environment), often used in knowledge management systems or semantic web applications. Also, This node helps to load the environmental map to the robot.
+
+## Installation & Running
+
+To utilize this software effectively, the user should adhere to the following steps for installing the necessary packages and repositories.
+
+* As the author opted to utilize the files ``[planner.py](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/planner.py)`` and ``[controller.py](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/controller.py)`` from the [arch_skeleton](https://github.com/buoncubi/arch_skeleton) repository, along with the [topological_map.owl](https://github.com/buoncubi/topological_map/blob/main/topological_map.owl) file from the [topological_map](https://github.com/buoncubi/topological_map) repository— both authored by [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) and the user is required to clone the aforementioned repositories along with the current one into the ROS workspace.
+* This package, being dependent on [aRMOR](https://github.com/EmaroLab/armor), must be installed according to the instructions outlined in the provided link as a prerequisite for running this package.
+* Additionally, it has a dependency on [SMACH](https://wiki.ros.org/smach), which can be installed by using the following commands:
+
+```bashscript
+$ sudo apt-get install ros-<distro>-executive-smach*
+```
+```bashscript
+$ sudo apt-get install ros-<distro>-smach-viewer
+```
+
+Here, **"ros-<distro>-"** depends to denote a package or component associated with a specific ROS distribution. For instance, **"ros-noetic"**, **"ros-melodic"**, and so on.
 
 
 
