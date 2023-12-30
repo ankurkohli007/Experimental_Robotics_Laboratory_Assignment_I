@@ -67,6 +67,20 @@ The temporal interaction among the software components is illustrated in the fig
 
 The low battery signal takes precedence as the highest-priority signal. Therefore, upon receiving the low battery signal, the software terminates all other requests, directing the robot to transition to the **RECHARGING** state.
 
+In the next section, a detailed description of all the components depicted in the diagrams is provided.
+
+### Component
+
+#### finite_statemachine node & helper node
+
+This node initializes the finite_statemachine (FSM) and outlines its behavior. To maintain a lightweight code structure, the author opted to implement a ``helper.py`` script, accessible [from here](https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/main/scripts/helper.py), where the majority of the reasoning is executed. The script comprises three classes, each dedicated to a specific helper:
+
+* **ActionClientHelper:** Streamlines the implementation of a client for ROS action servers.
+* **InterfaceHelper:** Manages synchronization with subscribers and action servers.
+* **KnowledgeGraphHelper:** Communicates with the aRMOR server by sending queries, primarily concerning robot position, reachable locations, and urgent locations.
+
+This approach allows users to comprehend the FSM's state transitions in the ``finite_statemachine.py`` script which can be accessible [here](https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/main/scripts/finite_statemachine.py), while insights into the FSM's reasoning for actions like changing location or initiating a recharge are available in the ``helper.py`` script.
+
 
 
 
