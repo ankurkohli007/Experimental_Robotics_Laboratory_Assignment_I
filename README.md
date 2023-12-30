@@ -144,7 +144,7 @@ $ source /opt/ros/<distro>/setup.bash
 Here, again the <distro> denotes a package or component associated with a specific ROS distribution
 
 * Run ``chmod +x <file_name>`` for each file inside the folder ``scripts`` of the assignment package which was cloned in the last step.
-* Run ``` bashscript $ catkin_make ``` from the root of your ROS workspace.
+* Run ``catkin_make`` from the root of your ROS workspace.
 
 
 
