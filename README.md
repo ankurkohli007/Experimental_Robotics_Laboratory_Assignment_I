@@ -197,6 +197,9 @@ rosrun smach_viewer smach_viewer.py
 
 **Note:** For the video of the task performance [click here](final_outcome.mov)
 
+``smach_viewer`` graph is diplayed below, which shows the robot behaviors using a finite state machine (FSM) approach. in SMACH, states represent specific robot actions or behaviors, transitions define conditions for state changes, and hierarchical structures facilitate the organization of complex behaviors. Integrated with ROS, SMACH uses ROS services, topics, and actions for seamless communication with the robot's environment. Developers define state machines in Python, allowing for modular and reusable components. SMACH is suitable for various robotic applications, offering tools like the SMACH Viewer for visualization and debugging. The development workflow involves installing ROS packages, creating Python scripts, and referring to SMACH documentation and tutorials for effective implementation.
+
+
 
 
 
