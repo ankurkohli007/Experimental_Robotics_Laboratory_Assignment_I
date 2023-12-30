@@ -182,14 +182,14 @@ roslaunch assignment1 exprob_assig1.launch
 GIF below shows the final outcome of the given task. It shows that how the robot's behaviour as it starting from the location ``E``, and looking for the corridors and reaches to the room, and charging the battery when it's starts depleting, performing the task, and so on.
 
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
+  <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/bb80070754ca2a7f89bacf31a598de06439e91e3/final_outcome.gif">
 </p>
 
 <p align="center">
     <em>Final Output: Task Performance</em>
 </p> 
 
-To visualize the change in states of the above robot,run ``smach_viewer`` using the command below:
+To visualize the change in states of the above robot, execute ``smach_viewer`` using the command given below:
 
 ```bashscript
 rosrun smach_viewer smach_viewer.py
