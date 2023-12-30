@@ -37,6 +37,29 @@ To model the robot's movements and stimuli in a simulation, the methodology adop
 
 The core of the software architecture involves a finite state machine, leveraging [SMACH](https://wiki.ros.org/smach) to provide a clear representation of process states and their transitions. Additionally, [aRMOR](https://github.com/EmaroLab/armor) is employed for utilizing the ontology of the topological map to control the robot within the Robot Operating System (ROS) environment.
 
+Below is the Software Architucture depicted.
+
+<p align="center">
+  <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/70717950b0374cae2869bba79ce96d50fbd25d3c/uml_diag.png">
+</p>
+
+<p align="center">
+    <em>Final Output</em>
+</p> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center">
   <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
 </p>
@@ -44,6 +67,7 @@ The core of the software architecture involves a finite state machine, leveragin
 <p align="center">
     <em>Final Output</em>
 </p> 
+
 
 
 
