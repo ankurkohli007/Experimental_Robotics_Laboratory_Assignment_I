@@ -122,6 +122,30 @@ $ sudo apt-get install ros-<distro>-smach-viewer
 
 Here, **"ros-<distro>-"** depends to denote a package or component associated with a specific ROS distribution. For instance, **"ros-noetic"**, **"ros-melodic"**, and so on.
 
+* Also, clone the [armor_py_api](https://github.com/EmaroLab/armor_py_api) repository in your ROS workspace.
+* Once the dependencies are met, the package can be installed as it follows:
+
+```bashscript
+$ mkdir -p ros_ws/src
+```
+```bashscript
+$ cd ros_ws/src
+```
+```bashscript
+$ git clone https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I.git
+```
+```bashscript
+$ cd ..
+```
+```bashscript
+$ source /opt/ros/<distro>/setup.bash
+```
+
+Here, again the <distro> denotes a package or component associated with a specific ROS distribution
+
+* Run ``chmod +x <file_name>`` for each file inside the folder ``scripts`` of the assignment package which was cloned in the last step.
+* Run ```bashscript $ catkin_make ``` from the root of your ROS workspace.
+
 
 
 
