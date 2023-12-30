@@ -274,7 +274,7 @@ In conclusion, this assignment introduces a robust Autonomous Surveillance Robot
 * Ankur Kohli
 * Contact: ankurkohli1997007@gmail.com
 
-aRMOR Realted query contact: 
+aRMOR realted query contact: 
 
 * [Prof. Carmine Tommaso Recchiuto](https://rubrica.unige.it/personale/UkNDWV1r); carmine.recchiuto@dibris.unige.it
 * [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq); luca.buoncompagni@edu.unige.it
