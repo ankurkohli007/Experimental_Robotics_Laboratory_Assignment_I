@@ -177,36 +177,16 @@ source devel/setup.bash
 roslaunch assignment1 exprob_assig1.launch
 ```
 
+## Result
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+GIF below shows the final outcome of the given task. It shows that how the robot's behaviour as it starting from the location ``E``, and looking for the corridors and reaches to the room, and charging the battery when it's starts depleting, performing the task, and so on.
 
 <p align="center">
   <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
 </p>
 
 <p align="center">
-    <em>Final Output</em>
+    <em>Final Output: Task Performance</em>
 </p> 
 
 
