@@ -201,10 +201,6 @@ $ roslaunch assignment1 exprob_assig1.launch
 
 
 
-
-
-
-
 <p align="center">
   <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
 </p>
