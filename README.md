@@ -122,7 +122,7 @@ $ sudo apt-get install ros-<distro>-executive-smach*
 $ sudo apt-get install ros-<distro>-smach-viewer
 ```
 
-Here, **"ros-<distro>-"** depends to denote a package or component associated with a specific ROS distribution. For instance, **"ros-noetic"**, **"ros-melodic"**, and so on.
+Here, ``ros-<distro>-`` depends to denote a package or component associated with a specific ROS distribution. For instance, **"ros-noetic"**, **"ros-melodic"**, and so on.
 
 * Also, clone the [armor_py_api](https://github.com/EmaroLab/armor_py_api) repository in your ROS workspace.
 * Once the dependencies are met, the package can be installed as it follows:
