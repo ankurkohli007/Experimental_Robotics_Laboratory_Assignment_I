@@ -219,6 +219,32 @@ The figure above explains the visual representation of SMACH state machines, aid
 
 The figure above offering a visual breakdown of states and transitions in tree view format. Let's breakdown this tree view, first is ``SM_ROOT`` which ``LOADING_MAP``. Furthermore, it is ``DETERMINING_CORRIDOR_OR_ROOM``. This followed by ``ON_CORRIDOR_MOVE`` and this followed by ``ON_URGENT_MOVE``. Lastly, the ``RECHARGING_STATION``.
 
+In the depicted figure, viewer can observe all pertinent components, illustrating the performance and goal of the task.
+
+<p align="center">
+  <img width="900" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/8d58431f347a41c8cf77cb1b81ed9e1068d50e75/finite_states.png">
+</p>
+
+<p align="center">
+    <em>finite_statemeachine</em>
+</p> 
+
+
+<p align="center">
+  <img width="900" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/8d58431f347a41c8cf77cb1b81ed9e1068d50e75/robot_states.png">
+</p>
+
+<p align="center">
+    <em>robot_states</em>
+</p> 
+
+
+
+
+
+
+
+
 
 
 
