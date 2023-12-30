@@ -40,7 +40,7 @@ The core of the software architecture involves a finite state machine, leveragin
 Below is the Software Architucture depicted.
 
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/70717950b0374cae2869bba79ce96d50fbd25d3c/uml_diag.png">
+  <img width="1000" height="800" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/70717950b0374cae2869bba79ce96d50fbd25d3c/uml_diag.png">
 </p>
 
 <p align="center">
