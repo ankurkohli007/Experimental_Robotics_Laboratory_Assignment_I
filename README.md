@@ -265,6 +265,20 @@ In future, the system, can be improved by entailing and making the robot aware o
 
 Another, Enhancements to the planner node are also conceivable, focusing on more precise consideration of walls. Additionally, a more realistic implementation of the battery level could contribute to refining the overall system.
 
+## Conclusion
+
+In conclusion, this assignment introduces a robust Autonomous Surveillance Robot tailored for effective navigation and surveillance within a 2D indoor environment. Leveraging ROS, SMACH state machines, and armor_py_api for ontology construction, the robot employs an adaptive topological map to strategically explore four rooms and three corridors. The surveillance policy, emphasizing corridor traversal and periodic room visits, ensures a dynamic and responsive approach to security monitoring. The integration of energy management, low-battery triggers, and autonomous recharging enhances the robot's autonomy. Despite some identified limitations in the current planner and battery management, the overall system represents a comprehensive solution for indoor surveillance, promising intelligent and adaptive navigation in controlled environments.
+
+## Author & Contact
+
+* Ankur Kohli
+* Contact: ankurkohli1997007@gmail.com
+
+aRMOR Realted query contact: 
+
+* [Prof. Carmine Tommaso Recchiuto](https://rubrica.unige.it/personale/UkNDWV1r); carmine.recchiuto@dibris.unige.it
+* [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq); luca.buoncompagni@edu.unige.it
+
 
 
 
