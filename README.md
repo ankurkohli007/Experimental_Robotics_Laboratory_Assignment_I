@@ -37,14 +37,14 @@ To model the robot's movements and stimuli in a simulation, the methodology adop
 
 The core of the software architecture involves a finite state machine, leveraging [SMACH](https://wiki.ros.org/smach) to provide a clear representation of process states and their transitions. Additionally, [aRMOR](https://github.com/EmaroLab/armor) is employed for utilizing the ontology of the topological map to control the robot within the Robot Operating System (ROS) environment.
 
-Below is the Software Architucture depicted.
+Below is the Software Architucture Component Diagram.
 
 <p align="center">
   <img width="1000" height="900" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/70717950b0374cae2869bba79ce96d50fbd25d3c/uml_diag.png">
 </p>
 
 <p align="center">
-    <em>Software Archutecture</em>
+    <em>Software Archutecture Component Diagram</em>
 </p> 
 
 **The above Software Architecture comprises of the following components:**
@@ -54,6 +54,24 @@ Below is the Software Architucture depicted.
            
 * **motion controller:** The ``controller`` node establishes an action server named ``motion/controller`` using the ``SimpleActionServer`` class and ``Control`` action message. It requires the ``state/set_pose`` service from the ``robot-state`` node and a plan in the form of ``via_points`` from the ``planner``. The controller iterates through each ``via_point``, simulating the time taken to move the robot to that location. The waiting time is computed based on the robot speed and Euclidean distance between points. At each ``via_point``, the ``state/set_pose`` service is invoked, and feedback is provided. The controller reads the robot battery level using ``state/get_battery_level`` and updates it through ``state/set_battery_level`` after decrementing. The ``controller_client`` node subscribes to the ``/path`` topic to obtain via_points and sends them to the controller server as an action goal.
 * **finite_state_machine - aRMOR:** This component defines states and transitions for the ``finite_state_machine`` of the ``topological map``. It utilizes the ``topological_map.py`` ``helper`` script to update the ``ontology`` during runtime. It determines the target room based on last visit times, sending the target room pose to the ``planner_client`` through ``/target_point`` to find the path.
+
+The temporal interaction among the software components is illustrated in the figure below. 
+
+<p align="center">
+  <img width="1000" height="800" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/d14051236ca6884a79e4342b03e8ad0a26847621/temporal_diagram.png">
+</p>
+
+<p align="center">
+    <em>Temporal Diagram</em>
+</p> 
+
+The low battery signal takes precedence as the highest-priority signal. Therefore, upon receiving the low battery signal, the software terminates all other requests, directing the robot to transition to the **RECHARGING** state.
+
+
+
+
+
+
 
 
 
