@@ -50,9 +50,9 @@ Below is the Software Architucture depicted.
 **The above Software Architecture comprises of the following components:**
 
 * **robot-state:** The ``robot-state`` serves as a node consolidating shared knowledge among components. It offers two services for robot position (``state/set_pose`` and ``state/get_pose``) and two for battery level (``state/set_battery_level`` and ``state/get_battery_level``).
-* **motion planner:**
+* **motion planner:** 
     <ul>
-      <li>The planner node employs an action server named motion/planner, utilizing the ``SimpleActionServer class`` and ``Plan action`` message. It relies on the ``state/get_pose`` 
+      <li>The planner node employs an action server ``named motion/planner``, utilizing the ``SimpleActionServer class`` and ``Plan action`` message. It relies on the ``state/get_pose`` 
           service from the ``robot-state`` node and a ``target`` point provided as a goal.</li>
       <li>The planner generates a plan consisting of ``via_points``, with a small delay to avoid conflicts with the robot's real situation.</li> 
       <li>The ``planner_client`` node receives the ``target point`` from the ``finite_state_machine`` node and forwards it to the ``planner server`` as an action goal. The resulting 
