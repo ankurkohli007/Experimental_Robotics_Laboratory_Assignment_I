@@ -182,7 +182,7 @@ roslaunch assignment1 exprob_assig1.launch
 GIF below shows the final outcome of the given task. It shows that how the robot's behaviour as it starting from the location ``E``, and looking for the corridors and reaches to the room, and charging the battery when it's starts depleting, performing the task, and so on.
 
 <p align="center">
-  <img width="800" height="800" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/bb80070754ca2a7f89bacf31a598de06439e91e3/final_outcome.gif">
+  <img width="500" height="500" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/bb80070754ca2a7f89bacf31a598de06439e91e3/final_outcome.gif">
 </p>
 
 <p align="center">
