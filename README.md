@@ -90,6 +90,10 @@ This node incorporates two services, namely ``state/set_pose`` and ``state/get_p
   
 Additionally, the node features a publisher of battery percentage on the ``state/battery_low`` topic. This representing changes in battery status. If the battery is low, the message display battery low status, and vice versa. Users have the flexibility to modify the battery time value by adjusting the constant variable ``BATTERY_TIME`` in the [``architecture_name_matter.py``](https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/main/utilities/assignment_1/architecture_name_mapper.py) script.
 
+#### ``load_environment`` node
+
+This scriot will load the map of nvironment to the robot which is initially at location ``E``.
+
 
 
 
