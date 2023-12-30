@@ -229,7 +229,7 @@ In the depicted figure, viewer can observe all pertinent components, illustratin
     <em>finite_statemachine</em>
 </p> 
 
-The above describes that, when the launch file is launched than the functions of the task comes into an action. It starts creating **"ontology"**, it stars "LOADING_MAP". Also, it shows the initial position of the robot, followed byt the reachable positions where robot can reach easily. Moreover, it also highlights the target to reach.
+The above describes that, when the launch file is launched than the functions of the task comes into an action. It starts creating **"ontology"**, it stars **"LOADING_MAP"**. Also, it shows the initial position of the robot, followed byt the reachable positions where robot can reach easily. Moreover, it also highlights the target to reach.
 
 The figure below explains, robot_states i.e. the status of robot's battery. It displays the percentatge of robot's battery, and also battery status such battery low and when the charging completes.
 
@@ -240,6 +240,38 @@ The figure below explains, robot_states i.e. the status of robot's battery. It d
 <p align="center">
     <em>robot_states</em>
 </p> 
+
+## Working Hypothesis
+
+To achieve the objectives outlined in the introduction, the author established several hypotheses:
+
+* In the absence of urgent rooms, the robot consistently monitors the corridors.
+* Corridors are exempt from urgency checks as the robot primarily remains in the corridor, and each time it inspects a room, it inherently needs to examine the connected corridor.
+* Robot's return to room E (starting point) when there no target to reach. The author deemed it essential for accurate simulation, ensuring the algorithm appropriately focuses on corridor checks until a room becomes urgent. When recharging is required, and room E is not directly accessible, the robot moves randomly until room E becomes reachable.
+* For simulation purposes, modification can be done in the [topological_map.owl](https://github.com/buoncubi/topological_map/blob/main/topological_map.owl) file, was set to 50 seconds. This adjustment ensures that the robot does not become persistently stuck in a corridor by continuously inspecting connected rooms if the threshold is too small.
+* Additionally, system features shows that the topological map is configured with dimensions of 10x10. Upon selecting a room as the target room from the ontology, the associated point is communicated to the planner as a ``PlanGoal``.
+
+## Limitation & Improvements
+
+### Limitation
+
+The planner stands out as a primary limitation in this ROS package, focusing solely on the starting and target points. Another constraint arises from the robot's behavior, where the battery level influences its choice, often prioritizing the charging room "E" over the target room derived from the last visit times.
+
+Furthermore, a related issue emerges as the robot currently reaches the recharging room randomly. While this is acceptable in the present environment, where each room connects to only one corridor and each corridor links to the recharging room, it could pose problems in scenarios where not all corridors connect to the recharging room. A potential enhancement could involve computing a direct path from the robot's position to the recharging room.
+
+### Improvements
+
+In future, the system, can be improved by entailing and making the robot aware of more urgent rooms, even if they aren't directly reachable. This awareness could guide the robot to those rooms using a method similar to reaching the recharging room.
+
+Another, Enhancements to the planner node are also conceivable, focusing on more precise consideration of walls. Additionally, a more realistic implementation of the battery level could contribute to refining the overall system.
+
+
+
+
+
+
+
+
 
 
 
