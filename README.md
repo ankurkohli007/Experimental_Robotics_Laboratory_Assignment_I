@@ -195,6 +195,8 @@ To visualize the change in states of the above robot, execute ``smach_viewer`` u
 rosrun smach_viewer smach_viewer.py
 ```
 
+**Note:** For the video of the task performance [click here](final_outcome.mov)
+
 
 
 
