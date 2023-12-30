@@ -98,6 +98,13 @@ This scriot will load the map of nvironment to the robot which is initially at l
 
 The reader or user can find a detailed decription of these two nodes in the [README](https://github.com/buoncubi/arch_skeleton/blob/main/README.md) of the [arch_skeleton](https://github.com/buoncubi/arch_skeleton) repository of [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq).
 
+### Briefing about the node defined in the assignment
+
+* ``finite_statemachine.py``: A finite state machine is a computational model that represents an entity's behaviour through a finite number of states and transitions between them. Also, Python module for implementing the Finite State Machine.
+* ``robot_states.py``: robot_states typically refers to a component or module in a robotic system responsible for managing and updating various states and information related to the robot, such as its pose, battery level, and operational status. Also, a Python module responsible for publishing the state of the battery, typically utilizing a ROS publisher to broadcast this information.
+* ``helper.py``: A node equipped with Interface Helper and ActionClient Helper to facilitate the Finite State Machine by providing information about the action client's status and executing battery-related stimuli.
+* ``load_environment.py``: "load_environment" typically refers to a process of loading or importing ontological data(environment), often used in knowledge management systems or semantic web applications. Also, This node helps to load the environmental map to the robot
+
 
 
 
