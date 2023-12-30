@@ -81,7 +81,20 @@ This node initializes the finite_statemachine (FSM) and outlines its behavior. T
 
 This approach allows users to comprehend the FSM's state transitions in the ``finite_statemachine.py`` script which can be accessible [here](https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/main/scripts/finite_statemachine.py), while insights into the FSM's reasoning for actions like changing location or initiating a recharge are available in the ``helper.py`` script.
 
-#### 
+#### ``robot_states`` node
+
+This node incorporates two services, namely ``state/set_pose`` and ``state/get_pose``, facilitating the setting and retrieval of the current robot position—a shared knowledge with the ``planner`` and ``controller`` nodes:
+
+* The service ``state/set_pose`` necessitates the input of a ``Point`` and does not return any values.
+* The service ``state/get_pose`` requires no input and returns a ``Point``.
+  
+Additionally, the node features a publisher of battery percentage on the ``state/battery_low`` topic. This representing changes in battery status. If the battery is low, the message display battery low status, and vice versa. Users have the flexibility to modify the battery time value by adjusting the constant variable ``BATTERY_TIME`` in the [``architecture_name_matter.py``](https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/main/utilities/assignment_1/architecture_name_mapper.py) script.
+
+
+
+
+
+
 
 
 
