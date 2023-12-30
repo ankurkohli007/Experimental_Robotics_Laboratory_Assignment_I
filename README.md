@@ -116,10 +116,10 @@ To utilize this software effectively, the user should adhere to the following st
 * Additionally, it has a dependency on [SMACH](https://wiki.ros.org/smach), which can be installed by using the following commands:
 
 ```bashscript
-$ sudo apt-get install ros-<distro>-executive-smach*
+sudo apt-get install ros-<distro>-executive-smach*
 ```
 ```bashscript
-$ sudo apt-get install ros-<distro>-smach-viewer
+sudo apt-get install ros-<distro>-smach-viewer
 ```
 
 Here, ``ros-<distro>-`` depends to denote a package or component associated with a specific ROS distribution. For instance, **"ros-noetic"**, **"ros-melodic"**, and so on.
@@ -128,19 +128,19 @@ Here, ``ros-<distro>-`` depends to denote a package or component associated with
 * Once the dependencies are met, the package can be installed as it follows:
 
 ```bashscript
-$ mkdir -p ros_ws/src
+mkdir -p ros_ws/src
 ```
 ```bashscript
-$ cd ros_ws/src
+cd ros_ws/src
 ```
 ```bashscript
-$ git clone https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I.git
+git clone https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I.git
 ```
 ```bashscript
-$ cd ..
+cd ..
 ```
 ```bashscript
-$ source /opt/ros/<distro>/setup.bash
+source /opt/ros/<distro>/setup.bash
 ```
 
 Here, again the ``<distro>`` denotes a package or component associated with a specific ROS distribution
@@ -171,10 +171,10 @@ The user should copy and add the above function in the script to make the softwa
 To initialize the software architecture in conjunction with the finite state machine representation, first install ``xterm`` if it is not installed by the command ``sudo apt-get install -y xterm`` and then execute the following commands:
 
 ```bashscript
-$ source devel/setup.bash
+source devel/setup.bash
 ```
 ```bashscript
-$ roslaunch assignment1 exprob_assig1.launch
+roslaunch assignment1 exprob_assig1.launch
 ```
 
 
