@@ -146,7 +146,7 @@ Here, again the <distro> denotes a package or component associated with a specif
 * Execute ``chmod +x <file_name>`` for each file inside the folder ``scripts`` of the assignment package which was cloned in the last step.
 * Execute ``catkin_make`` from the root of your ROS workspace.
 
-**Note:** If the error incurs while the installation of ``aRMOR`` package follow the tutorial to overcome the issue from [here](https://github.com/EmaroLab/armor/issues/7). Moreover, The author [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) found some issues with the function proposed in the script ``[armor_manipulation_client.py](https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py)`` to disjoint the individuals of the ontology. Hence, another function was created in the script as:
+**Note:** If the error incurs while the installation of ``aRMOR`` package follow the tutorial to overcome the issue from [here](https://github.com/EmaroLab/armor/issues/7). Moreover, The author [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) found some issues with the function proposed in the script ``[armor_manipulation_client.py]``(https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py) to disjoint the individuals of the ontology. Hence, another function was created in the script as:
 
 ```py
 def disj_inds(self, inds):
