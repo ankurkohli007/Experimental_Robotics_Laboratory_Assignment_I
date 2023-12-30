@@ -94,6 +94,10 @@ Additionally, the node features a publisher of battery percentage on the ``state
 
 This scriot will load the map of nvironment to the robot which is initially at location ``E``.
 
+#### ``planner`` node & ``controller`` node
+
+The reader or user can find a detailed decription of these two nodes in the [README](https://github.com/buoncubi/arch_skeleton/blob/main/README.md) of the [arch_skeleton](https://github.com/buoncubi/arch_skeleton) repository of [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq).
+
 
 
 
