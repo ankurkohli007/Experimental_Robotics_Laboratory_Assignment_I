@@ -226,9 +226,12 @@ In the depicted figure, viewer can observe all pertinent components, illustratin
 </p>
 
 <p align="center">
-    <em>finite_statemeachine</em>
+    <em>finite_statemachine</em>
 </p> 
 
+The above describes that, when the launch file is launched than the functions of the task comes into an action. It starts creating **"ontology"**, it stars "LOADING_MAP". Also, it shows the initial position of the robot, followed byt the reachable positions where robot can reach easily. Moreover, it also highlights the target to reach.
+
+The figure below explains, robot_states i.e. the status of robot's battery. It displays the percentatge of robot's battery, and also battery status such battery low and when the charging completes.
 
 <p align="center">
   <img width="900" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/8d58431f347a41c8cf77cb1b81ed9e1068d50e75/robot_states.png">
@@ -237,6 +240,7 @@ In the depicted figure, viewer can observe all pertinent components, illustratin
 <p align="center">
     <em>robot_states</em>
 </p> 
+
 
 
 
