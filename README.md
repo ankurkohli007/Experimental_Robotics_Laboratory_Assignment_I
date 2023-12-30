@@ -189,6 +189,12 @@ GIF below shows the final outcome of the given task. It shows that how the robot
     <em>Final Output: Task Performance</em>
 </p> 
 
+To visualize the change in states of the above robot,run ``smach_viewer`` using the command below:
+
+```bashscript
+rosrun smach_viewer smach_viewer.py
+```
+
 
 
 
