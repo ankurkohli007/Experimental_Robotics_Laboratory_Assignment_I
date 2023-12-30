@@ -109,7 +109,7 @@ The reader or user can find a detailed decription of these two nodes in the [REA
 
 To utilize this software effectively, the user should adhere to the following steps for installing the necessary packages and repositories.
 
-* As the author opted to utilize the files ``[planner.py](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/planner.py)`` and ``[controller.py](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/controller.py)`` from the [arch_skeleton](https://github.com/buoncubi/arch_skeleton) repository, along with the [topological_map.owl](https://github.com/buoncubi/topological_map/blob/main/topological_map.owl) file from the [topological_map](https://github.com/buoncubi/topological_map) repository— both authored by [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) and the user is required to clone the aforementioned repositories along with the current one into the ROS workspace.
+* As the author opted to utilize the files [``planner.py``](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/planner.py) and [``controller.py``](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/controller.py) from the [arch_skeleton](https://github.com/buoncubi/arch_skeleton) repository, along with the [topological_map.owl](https://github.com/buoncubi/topological_map/blob/main/topological_map.owl) file from the [topological_map](https://github.com/buoncubi/topological_map) repository— both authored by [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) and the user is required to clone the aforementioned repositories along with the current one into the ROS workspace.
 * This package, being dependent on [aRMOR](https://github.com/EmaroLab/armor), must be installed according to the instructions outlined in the provided link as a prerequisite for running this package.
 * Additionally, it has a dependency on [SMACH](https://wiki.ros.org/smach), which can be installed by using the following commands:
 
@@ -146,7 +146,7 @@ Here, again the <distro> denotes a package or component associated with a specif
 * Execute ``chmod +x <file_name>`` for each file inside the folder ``scripts`` of the assignment package which was cloned in the last step.
 * Execute ``catkin_make`` from the root of your ROS workspace.
 
-**Note:** If the error incurs while the installation of ``aRMOR`` package follow the tutorial to overcome the issue from [here](https://github.com/EmaroLab/armor/issues/7). Moreover, The author [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) found some issues with the function proposed in the script ``[armor_manipulation_client.py]``(https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py) to disjoint the individuals of the ontology. Hence, another function was created in the script as:
+**Note:** If the error incurs while the installation of ``aRMOR`` package follow the tutorial to overcome the issue from [here](https://github.com/EmaroLab/armor/issues/7). Moreover, The author [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) found some issues with the function proposed in the script [``armor_manipulation_client.py``](https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py) to disjoint the individuals of the ontology. Hence, another function was created in the script as:
 
 ```py
 def disj_inds(self, inds):
