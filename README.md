@@ -204,10 +204,20 @@ rosrun smach_viewer smach_viewer.py
 </p>
 
 <p align="center">
-    <em>Graphical Representation of smach_viewer</em>
+    <em>Graphical View of smach_viewer</em>
 </p> 
 
+The figure above explains the visual representation of SMACH state machines, aiding in understanding of robot behaviors in 2d indoor environment. It allows developers to inspect state transitions and hierarchical structures graphically, enhancing the workflow in designing and refining robot actions. Also, helpful to viewers for the understanding of the task. The tool facilitates a more intuitive approach to managing and optimizing SMACH-based systems.
 
+<p align="center">
+  <img width="900" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/4da6a79d4b6e63a301af5995da55322c4feb3416/smach_viewer_tree.png">
+</p>
+
+<p align="center">
+    <em>Tree View of smach_viewer</em>
+</p> 
+
+The figure above offering a visual breakdown of states and transitions. Let's breakdown tree view, first is ``SM_ROOT`` which ``LOADING_MAP``. Furthermore, it is ``DETERMINING_CORRIDOR_OR_ROOM``. This followed by ``ON_CORRIDOR_MOVE`` and this followed by ``ON_URGENT_MOVE``. Lastly, the ``RECHARGING_STATION``.
 
 
 
