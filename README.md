@@ -195,7 +195,7 @@ To visualize the change in states of the above robot, execute ``smach_viewer`` u
 rosrun smach_viewer smach_viewer.py
 ```
 
-To quit all the process press on your keyboard ``ctrl + c``. 
+To quit all the process, press on your keyboard ``ctrl + c``. 
 
 **Note:** For the video of the task performance [click here](final_outcome.mov)
 
