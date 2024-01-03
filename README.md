@@ -276,8 +276,8 @@ In conclusion, this assignment introduces a robust Autonomous Surveillance Robot
 
 aRMOR realted query contact: 
 
-* [Prof. Carmine Tommaso Recchiuto](https://rubrica.unige.it/personale/UkNDWV1r); carmine.recchiuto@dibris.unige.it
-* [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq); luca.buoncompagni@edu.unige.it
+* Prof. Carmine Tommaso Recchiuto; carmine.recchiuto@dibris.unige.it
+* Prof. Luca Buoncompagni; luca.buoncompagni@edu.unige.it
 
 
 
