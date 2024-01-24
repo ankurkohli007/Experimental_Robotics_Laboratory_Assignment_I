@@ -95,6 +95,51 @@ In the figure below it highlights the temporal interaction between the software 
     <em>Component Diagram</em>
 </p> 
 
+In the event of a low battery signal, which holds the highest priority, the software within the Finite State Machine (FSM) promptly cancels all other requests. This cancellation ensures that the robot seamlessly transitions to the RECHARGING state, prioritizing the critical need to address the low battery condition.
+
+## Installation & Running
+
+### Installation
+
+To utilize this software effectively, the user should adhere to the following steps for installing the necessary packages and repositories.
+
+* As the author opted to utilize the files [``planner.py``](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/planner.py) and [``controller.py``](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/controller.py) from the [arch_skeleton](https://github.com/buoncubi/arch_skeleton) repository, along with the [topological_map.owl](https://github.com/buoncubi/topological_map/blob/main/topological_map.owl) file from the [topological_map](https://github.com/buoncubi/topological_map) repository— both authored by [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) and the user is required to clone the aforementioned repositories along with the current one into the ROS workspace.
+* This package, being dependent on [aRMOR](https://github.com/EmaroLab/armor), must be installed according to the instructions outlined in the provided link as a prerequisite for running this package.
+* Additionally, it has a dependency on [SMACH](https://wiki.ros.org/smach), which can be installed by using the following commands:
+
+```bashscript
+sudo apt-get install ros-<distro>-executive-smach*
+```
+```bashscript
+sudo apt-get install ros-<distro>-smach-viewer
+```
+
+Here, ``ros-<distro>-`` depends to denote a package or component associated with a specific ROS distribution. For instance, **"ros-noetic"**, **"ros-melodic"**, and so on.
+
+* Also, clone the [armor_py_api](https://github.com/EmaroLab/armor_py_api) repository in your ROS workspace.
+* Once the dependencies are met, the package can be installed as it follows:
+
+```bashscript
+mkdir -p ros_ws/src
+```
+```bashscript
+cd ros_ws/src
+```
+```bashscript
+git clone https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I.git
+```
+```bashscript
+cd ..
+```
+```bashscript
+source /opt/ros/<distro>/setup.bash
+```
+
+Here, again the ``<distro>`` denotes a package or component associated with a specific ROS distribution.
+
+* Execute ``chmod +x <file_name>`` for each file inside the folder ``scripts`` of the assignment package which was cloned in the last step.
+* Execute ``catkin_make`` from the root of your ROS workspace.
+
 
 
 
