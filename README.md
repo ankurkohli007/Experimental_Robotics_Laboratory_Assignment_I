@@ -83,6 +83,17 @@ This module accepts the subsequent goal from the behavior component, which, in t
 
 Given the constraints of the simulated program, where solely adjacent movements are allowed, the planner module doesn't actively perform computations. Instead, it simulates its operations using busy waiting.
 
+## Temporal Diagram
+
+In the figure below it highlights the temporal interaction between the software components:
+
+<p align="center">
+  <img width="800" height="500" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/2caa4f12cce65654235b60202409a757a4040b90/temporal_diagram.png">
+</p>
+
+<p align="center">
+    <em>Component Diagram</em>
+</p> 
 
 
 
