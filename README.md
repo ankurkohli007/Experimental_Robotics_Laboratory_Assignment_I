@@ -248,6 +248,24 @@ Also, the smach_viewer in **tree view** as show in figure below:
     <em>smach_viewer Tree View</em>
 </p> 
 
+### RQT Graph
+
+To view the `rqt_graph` execute the command given below:
+
+```bashscript
+rosrun rqt_graph rqt_graph
+```
+
+<p align="center">
+  <img width="800" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/389ac68dea900ec56e058dd069b42270d53445c4/rqt.png">
+</p>
+
+<p align="center">
+    <em>smach_viewer Tree View</em>
+</p> 
+
+The figure above shows the `rqt_graph`. 
+
 ## Working Hypothesis
 
 To achieve the outlined objectives in the introduction, the author formulated several hypotheses:
