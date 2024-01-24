@@ -19,6 +19,7 @@ Service:
 
 #Import ROS libraries; imports various modules, including SMACH, ROS packages, and custom helpers, to create a state machine for a robot control application.
 
+
 import smach
 import rospy
 import random
@@ -26,9 +27,9 @@ import smach_ros
 import time
 import assignment_1
 from smach import StateMachine,State
-from helper import InterfaceHelper
-from helper import KnowledgeGraphHelper
-from load_environment import LoadKnowledgeGraph
+from .helper import InterfaceHelper
+from .helper import KnowledgeGraphHelper
+from .load_environment import LoadKnowledgeGraph
 from assignment_1.msg import Point, ControlGoal, PlanGoal
 from armor_api.armor_client import ArmorClient
 from assignment_1 import architecture_name_mapper as anm

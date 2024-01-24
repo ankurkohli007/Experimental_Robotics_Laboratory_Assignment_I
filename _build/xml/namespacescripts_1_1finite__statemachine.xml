@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="38" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="38" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="39" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a3b82c7a24ea5fb8ebd493ff344f4e5b2" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="39" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="39" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="40" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a672b4f306c73a469f629092d706783df" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="40" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="40" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="41" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1aeaa23f44b3b63d595cb58807b61e16f5" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="41" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="41" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="42" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a4fec927f3e02cbb7501cd151863c5423" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="42" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="42" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="43" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a872723eb0b474357a9dbfdacc7e31709" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="43" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="43" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="44" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a88d0e861e3adcc0b36a7adc0d42bf6a2" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="44" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="44" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="45" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1aa83d92c52667f4111c83b65d5e3de194" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="45" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="45" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="46" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1ace21f5750e8fd06c3c52566e5856ae8f" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="46" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="46" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="47" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a23f5c7b9d5f2852acdd6ab00d510d64f" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="47" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="47" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="48" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a3fb33dc77bde67b196b56cd6f6fadf53" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="51" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="51" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="52" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a4c3419e6dfa580337061e99f5548f140" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="52" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="52" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="53" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1aa7be23d3126058cb45e1560c2c0fb52b" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="53" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="53" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="54" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a58e4187058370094cf237099e0717eda" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -202,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="54" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="54" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="55" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1ab6dbc00be4d1b7ceb8ec0422c6ba4eb6" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="55" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="55" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="56" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a04cc3880047b11a94f7c515a3b936fda" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -230,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="56" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="56" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="57" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a289a7ed8bc0f5450dae53894aad40b40" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -244,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="57" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="57" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="58" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1ad78da5d0502ce3e0c16d73dc08e3d668" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -258,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="58" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="58" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="59" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacescripts_1_1finite__statemachine_1a969605c00ff8e3f3a8e3d0336d9096b0" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -272,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="62" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="62" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="63" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="63" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="319" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="319" bodyend="365"/>
+        <location file="scripts/finite_statemachine.py" line="320" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="320" bodyend="366"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -298,7 +298,7 @@
 <para><verbatim>.. module:: finite_statemachine
    :platform: Unix
    :synopsis: A finite state machine is a computational model that represents an entity&apos;s behaviour through a finite number of states 
-          and transitions between them. Also, Python module for implementing the Finite State Machine.
+              and transitions between them. Also, Python module for implementing the Finite State Machine.
 
 .. moduleauthor:: Ankur Kohli
 
@@ -308,7 +308,7 @@ In ROS (Robot Operating System), a finite state machine (FSM) is a programming p
 This the core of all ROS nodes, the finite state machine, plays a pivotal role in orchestrating state changes, enabling the robot to achieve desired conditions by coordinating actions across two action servers.
 
 Service: 
-/server_name: To visualize the finite state machine, initiate and activate the introspection server using sm_introspection.</verbatim> </para>
+    /server_name: To visualize the finite state machine, initiate and activate the introspection server using sm_introspection.</verbatim> </para>
     </detaileddescription>
     <location file="scripts/finite_statemachine.py" line="1" column="1"/>
   </compounddef>

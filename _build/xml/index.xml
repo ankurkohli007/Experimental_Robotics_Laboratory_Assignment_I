@@ -142,9 +142,6 @@
     <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a68268017b3ad54dc336f8938fb3db939" kind="function"><name>relocate</name></member>
     <member refid="classscripts_1_1helper_1_1_knowledge_graph_helper_1a53d17bf95caf35a973a6decf1b11ea0b" kind="function"><name>headToRechargeStation</name></member>
   </compound>
-  <compound refid="classconf_1_1_mock_module" kind="class"><name>conf::MockModule</name>
-    <member refid="classconf_1_1_mock_module_1a1d929c94f183876f9246faf7c0fedc55" kind="variable"><name>__all__</name></member>
-  </compound>
   <compound refid="classscripts_1_1robot__states_1_1_robot_state" kind="class"><name>scripts::robot_states::RobotState</name>
     <member refid="classscripts_1_1robot__states_1_1_robot_state_1a357082b6625b42db6d4bf16bfbe61f5e" kind="variable"><name>_pose</name></member>
     <member refid="classscripts_1_1robot__states_1_1_robot_state_1a87ef43e30268956bedcb3218f0353a2f" kind="variable"><name>_battery_low</name></member>
@@ -251,8 +248,6 @@
     <member refid="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
     <member refid="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
     <member refid="conf_8py_1ae475e080536acb271a0a0efe56c3ba42" kind="variable"><name>extensions</name></member>
-    <member refid="conf_8py_1aa0ec3e2d302f8100428e8ffcf81824b6" kind="variable"><name>MOCK_MODULES</name></member>
-    <member refid="conf_8py_1a5423ed13ece210555067edc853325f3c" kind="variable"><name>autodoc_mock_functions</name></member>
     <member refid="conf_8py_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
     <member refid="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
     <member refid="conf_8py_1a3117edf4443d9b8c70a9f0f44294ba79" kind="variable"><name>highlight_language</name></member>
@@ -265,8 +260,6 @@
     <member refid="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" kind="variable"><name>breathe_projects</name></member>
     <member refid="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" kind="variable"><name>breathe_default_project</name></member>
     <member refid="conf_8py_1a54585428ce84441199d9dfd7087e2243" kind="variable"><name>breathe_default_members</name></member>
-    <member refid="conf_8py_1aacdaa386c959c6f32b106995c15eeb3a" kind="function"><name>skip_mocked_members</name></member>
-    <member refid="conf_8py_1ab10c3cab2b831ad54a5b330ce0f414e0" kind="function"><name>setup</name></member>
   </compound>
   <compound refid="namespacescripts" kind="namespace"><name>scripts</name>
   </compound>
@@ -308,9 +301,19 @@
   <compound refid="namespacesetup" kind="namespace"><name>setup</name>
     <member refid="setup_8py_1a504ffa482edfe0eff08f64b2f5dff0e9" kind="variable"><name>setup_args</name></member>
   </compound>
+  <compound refid="__build_2html_2__sources_2index_8rst_8txt" kind="file"><name>index.rst.txt</name>
+    <member refid="__build_2html_2__sources_2index_8rst_8txt_1a9fcf21a5b0e027bb400c6a7edc983ff8" kind="variable"><name>file</name></member>
+    <member refid="__build_2html_2__sources_2index_8rst_8txt_1ae78dbdcc3051b69362cdeb5ef95156f2" kind="variable"><name>Dec</name></member>
+  </compound>
+  <compound refid="docs_2__sources_2index_8rst_8txt" kind="file"><name>index.rst.txt</name>
+    <member refid="docs_2__sources_2index_8rst_8txt_1a9fcf21a5b0e027bb400c6a7edc983ff8" kind="variable"><name>file</name></member>
+    <member refid="docs_2__sources_2index_8rst_8txt_1ae78dbdcc3051b69362cdeb5ef95156f2" kind="variable"><name>Dec</name></member>
+  </compound>
   <compound refid="_c_make_lists_8txt" kind="file"><name>CMakeLists.txt</name>
   </compound>
   <compound refid="conf_8py" kind="file"><name>conf.py</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="scripts_2____init_____8py" kind="file"><name>__init__.py</name>
   </compound>
@@ -342,9 +345,21 @@
   </compound>
   <compound refid="architecture__name__mapper_8py" kind="file"><name>architecture_name_mapper.py</name>
   </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_45b9293d3daaa82c00b5908f14ebb805" kind="dir"><name>_build</name>
+  </compound>
+  <compound refid="dir_585d6f41c8c6e69e0f84b478a34e55d0" kind="dir"><name>docs/_sources</name>
+  </compound>
+  <compound refid="dir_02bdb4005edb5055ba0ef39c3e2b4a3d" kind="dir"><name>_build/html/_sources</name>
+  </compound>
   <compound refid="dir_24fab40fc2732f128295dd90e2e29ba6" kind="dir"><name>utilities/armor_api</name>
   </compound>
   <compound refid="dir_eb3f4ad10a695a66749a76a2f4c5f387" kind="dir"><name>utilities/assignment_1</name>
+  </compound>
+  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>docs</name>
+  </compound>
+  <compound refid="dir_63358181ce567149a79d24bdd45b3e93" kind="dir"><name>_build/html</name>
   </compound>
   <compound refid="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir"><name>scripts</name>
   </compound>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="226" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="226" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="227" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="227" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder_1aa4db4779fc3cded8b1884dc97c781997" prot="private" static="no" mutable="no">
         <type></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="227" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="227" bodyend="-1"/>
+        <location file="scripts/finite_statemachine.py" line="228" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="228" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="224" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="224" bodyend="230"/>
+        <location file="scripts/finite_statemachine.py" line="225" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="225" bodyend="231"/>
       </memberdef>
       <memberdef kind="function" id="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder_1aa1c15c4687788b9b9a402daec1c4919c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -87,7 +87,7 @@ Returns:
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/finite_statemachine.py" line="231" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="231" bodyend="277"/>
+        <location file="scripts/finite_statemachine.py" line="232" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="232" bodyend="278"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -98,7 +98,7 @@ Returns:
     </detaileddescription>
     <inheritancegraph>
       <node id="2">
-        <label>smach::State</label>
+        <label>State</label>
       </node>
       <node id="1">
         <label>scripts.finite_statemachine.UrgentPathfinder</label>
@@ -109,7 +109,7 @@ Returns:
     </inheritancegraph>
     <collaborationgraph>
       <node id="2">
-        <label>smach::State</label>
+        <label>State</label>
       </node>
       <node id="1">
         <label>scripts.finite_statemachine.UrgentPathfinder</label>
@@ -118,7 +118,7 @@ Returns:
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="scripts/finite_statemachine.py" line="219" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="219" bodyend="278"/>
+    <location file="scripts/finite_statemachine.py" line="220" column="1" bodyfile="scripts/finite_statemachine.py" bodystart="220" bodyend="279"/>
     <listofallmembers>
       <member refid="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder_1adbda0d0e119e86cdb3877301c01a3b48" prot="public" virt="non-virtual"><scope>scripts::finite_statemachine::UrgentPathfinder</scope><name>__init__</name></member>
       <member refid="classscripts_1_1finite__statemachine_1_1_urgent_pathfinder_1a797a623189e1b3a293d6f7746e91f165" prot="private" virt="non-virtual"><scope>scripts::finite_statemachine::UrgentPathfinder</scope><name>_helper</name></member>

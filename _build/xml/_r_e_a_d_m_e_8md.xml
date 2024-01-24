@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">[Experimental<sp/>Robotics<sp/>Laboratory](https://corsi.unige.it/en/off.f/2022/ins/60244)&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal">**Programmer:**<sp/>[Ankur<sp/>Kohli](https://github.com/ankurkohli007)&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal">[M.Sc<sp/>Robotics<sp/>Engineering](https://corsi.unige.it/corsi/10635)&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal">[University<sp/>of<sp/>Genoa<sp/>(UniGe),<sp/>Italy](https://unige.it/en)&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal">**Supervisor:**<sp/>[Prof.<sp/>Carmine<sp/>Tommaso<sp/>Recchiuto](https://rubrica.unige.it/personale/UkNDWV1r)<sp/>&amp;<sp/>[Prof.<sp/>Luca<sp/>Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Assignment<sp/>1:<sp/>Adaptive<sp/>Autonomous<sp/>Surveillance<sp/>Robot<sp/>for<sp/>Indoor<sp/>Environments<sp/>with<sp/>Energy<sp/>Management</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Abstract</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>assignment<sp/>introduces<sp/>an<sp/>**Autonomous<sp/>Surveillance<sp/>Robot**<sp/>designed<sp/>for<sp/>efficient<sp/>navigation<sp/>in<sp/>a<sp/>2D<sp/>indoor<sp/>environment<sp/>comprising<sp/>four<sp/>rooms<sp/>and<sp/>three<sp/>corridors.<sp/>Commencing<sp/>in<sp/>Phase<sp/>1,<sp/>the<sp/>robot<sp/>initiates<sp/>operations<sp/>at<sp/>the<sp/>&quot;E&quot;<sp/>location,<sp/>awaiting<sp/>instructions<sp/>to<sp/>construct<sp/>a<sp/>comprehensive<sp/>topological<sp/>map<sp/>that<sp/>delineates<sp/>the<sp/>spatial<sp/>relationships<sp/>between<sp/>corridors<sp/>(C1,<sp/>C2),<sp/>rooms<sp/>(R1,<sp/>R2,<sp/>R3),<sp/>and<sp/>doors<sp/>(D1...D6).<sp/>This<sp/>map<sp/>serves<sp/>as<sp/>a<sp/>foundational<sp/>guide<sp/>for<sp/>the<sp/>subsequent<sp/>phases.<sp/>In<sp/>Phase<sp/>2,<sp/>the<sp/>robot<sp/>executes<sp/>a<sp/>perpetual<sp/>loop<sp/>of<sp/>movement<sp/>and<sp/>surveillance,<sp/>adhering<sp/>to<sp/>a<sp/>policy<sp/>that<sp/>prioritizes<sp/>corridor<sp/>traversal<sp/>and<sp/>periodic<sp/>room<sp/>exploration<sp/>based<sp/>on<sp/>a<sp/>predefined<sp/>duration<sp/>since<sp/>the<sp/>last<sp/>visit.<sp/>An<sp/>autonomous<sp/>robot<sp/>return<sp/>to<sp/>the<sp/>&quot;E&quot;<sp/>location<sp/>is<sp/>triggered<sp/>when<sp/>the<sp/>robot&apos;s<sp/>battery<sp/>level<sp/>falls<sp/>below<sp/>a<sp/>set<sp/>threshold,<sp/>enabling<sp/>recharge<sp/>before<sp/>recommencing<sp/>surveillance.<sp/>By<sp/>integrating<sp/>adaptive<sp/>topological<sp/>mapping,<sp/>energy<sp/>management,<sp/>and<sp/>a<sp/>surveillance<sp/>policy,<sp/>this<sp/>autonomous<sp/>surveillance<sp/>robot<sp/>emerges<sp/>as<sp/>a<sp/>comprehensive<sp/>solution<sp/>for<sp/>effective<sp/>indoor<sp/>security<sp/>and<sp/>surveillance<sp/>applications,<sp/>offering<sp/>dynamic<sp/>and<sp/>responsive<sp/>navigation<sp/>capabilities<sp/>within<sp/>a<sp/>controlled<sp/>environment.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Introduction</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>the<sp/>evolving<sp/>landscape<sp/>of<sp/>robotics<sp/>and<sp/>artificial<sp/>intelligence,<sp/>the<sp/>deployment<sp/>of<sp/>autonomous<sp/>surveillance<sp/>systems<sp/>holds<sp/>immense<sp/>potential<sp/>for<sp/>enhancing<sp/>security<sp/>and<sp/>monitoring<sp/>capabilities.<sp/>This<sp/>project<sp/>addresses<sp/>the<sp/>design<sp/>and<sp/>implementation<sp/>of<sp/>an<sp/>autonomous<sp/>surveillance<sp/>robot<sp/>specifically<sp/>crafted<sp/>for<sp/>navigating<sp/>a<sp/>2D<sp/>indoor<sp/>environment<sp/>comprising<sp/>four<sp/>rooms<sp/>and<sp/>three<sp/>corridors.<sp/>The<sp/>robot&apos;s<sp/>primary<sp/>mission<sp/>is<sp/>to<sp/>strategically<sp/>traverse<sp/>this<sp/>space,<sp/>adhering<sp/>to<sp/>a<sp/>surveillance<sp/>policy<sp/>that<sp/>emphasizes<sp/>corridor<sp/>exploration<sp/>while<sp/>periodically<sp/>visiting<sp/>unexplored<sp/>rooms.<sp/>An<sp/>intelligent<sp/>battery<sp/>management<sp/>system<sp/>ensures<sp/>the<sp/>robot&apos;s<sp/>autonomy,<sp/>prompting<sp/>a<sp/>return<sp/>to<sp/>a<sp/>designated<sp/>location<sp/>for<sp/>recharging<sp/>when<sp/>the<sp/>battery<sp/>level<sp/>reaches<sp/>a<sp/>critical<sp/>threshold.<sp/>The<sp/>simulation<sp/>of<sp/>the<sp/>robot&apos;s<sp/>movements<sp/>and<sp/>responses,<sp/>including<sp/>low<sp/>battery<sp/>scenarios,<sp/>follows<sp/>an<sp/>approach<sp/>outlined<sp/>in<sp/>a<sp/>provided<sp/>GitHub<sp/>repository<sp/>provide<sp/>by<sp/>[Prof.<sp/>Luca<sp/>Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq)<sp/>of<sp/>[Topological<sp/>Map](https://github.com/buoncubi/arch_skeleton).<sp/>By<sp/>integrating<sp/>adaptive<sp/>topological<sp/>mapping,<sp/>energy<sp/>management,<sp/>and<sp/>a<sp/>targeted<sp/>surveillance<sp/>policy,<sp/>the<sp/>envisioned<sp/>autonomous<sp/>surveillance<sp/>robot<sp/>presents<sp/>a<sp/>sophisticated<sp/>solution<sp/>for<sp/>ensuring<sp/>effective<sp/>and<sp/>dynamic<sp/>surveillance<sp/>in<sp/>indoor<sp/>environments.<sp/>The<sp/>amalgamation<sp/>of<sp/>these<sp/>elements<sp/>aims<sp/>to<sp/>create<sp/>a<sp/>responsive<sp/>and<sp/>intelligent<sp/>system<sp/>capable<sp/>of<sp/>fulfilling<sp/>surveillance<sp/>objectives<sp/>while<sp/>navigating<sp/>the<sp/>intricacies<sp/>of<sp/>the<sp/>designated<sp/>environment.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>contents<sp/>of<sp/>this<sp/>repository<sp/>feature<sp/>a<sp/>software<sp/>solution<sp/>built<sp/>on<sp/>the<sp/>Robot<sp/>Operating<sp/>System<sp/>(ROS),<sp/>simulating<sp/>the<sp/>intricate<sp/>behavioral<sp/>architecture<sp/>of<sp/>a<sp/>mobile<sp/>robot<sp/>as<sp/>it<sp/>dynamically<sp/>moves<sp/>through<sp/>different<sp/>rooms.<sp/>This<sp/>assignment<sp/>leverages<sp/>the<sp/>[ROS<sp/>SMACH](https://wiki.ros.org/smach)<sp/>state<sp/>machine<sp/>and<sp/>employs<sp/>the<sp/>[armor_py_api](https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py),<sp/>a<sp/>tool<sp/>provided<sp/>by<sp/>the<sp/>[EMARO<sp/>Lab](https://github.com/EmaroLab)<sp/>at<sp/>the<sp/>[University<sp/>of<sp/>Genoa<sp/>(UniGe),<sp/>Italy](https://unige.it/en),<sp/>to<sp/>construct<sp/>a<sp/>comprehensive<sp/>ontology.<sp/>Notably,<sp/>a<sp/>critical<sp/>focal<sp/>point<sp/>of<sp/>this<sp/>exercise<sp/>revolves<sp/>around<sp/>achieving<sp/>optimal<sp/>synchronization<sp/>between<sp/>the<sp/>robot&apos;s<sp/>actions<sp/>and<sp/>user<sp/>interactions.<sp/>The<sp/>design<sp/>places<sp/>paramount<sp/>importance<sp/>on<sp/>minimizing<sp/>any<sp/>waiting<sp/>time<sp/>for<sp/>the<sp/>user,<sp/>ensuring<sp/>a<sp/>seamless<sp/>experience,<sp/>with<sp/>the<sp/>exception<sp/>of<sp/>necessary<sp/>intervals<sp/>when<sp/>the<sp/>robot<sp/>is<sp/>in<sp/>the<sp/>process<sp/>of<sp/>recharging<sp/>its<sp/>battery.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;p<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;img<sp/>width=&quot;1000&quot;<sp/>height=&quot;600&quot;<sp/>src=&quot;https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;p<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;em&gt;Final<sp/>Output&lt;/em&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

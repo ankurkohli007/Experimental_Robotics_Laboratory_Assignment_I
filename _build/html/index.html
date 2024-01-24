@@ -45,10 +45,30 @@
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Welcome to Adaptive Autonomous Surveillance Robot for Indoor Environments with Energy Management’s Documentation!</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-<li><a class="reference internal" href="#module-scripts.finite_statemachine">Finite State Machine Module</a></li>
-<li><a class="reference internal" href="#module-scripts.robot_states">Robot States Module</a></li>
-<li><a class="reference internal" href="#module-scripts.load_environment">Load Environment Module</a></li>
-<li><a class="reference internal" href="#module-scripts.helper">Helper Module</a></li>
+<li><a class="reference internal" href="#finite-state-machine-module">Finite State Machine Module</a></li>
+<li><a class="reference internal" href="#robot-states-module">Robot States Module</a></li>
+<li><a class="reference internal" href="#load-environment-module">Load Environment Module</a></li>
+<li><a class="reference internal" href="#module-scripts.helper">Helper Module</a><ul>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper</span></code></a><ul>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper.cancel_goals"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper.cancel_goals()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper.done_callback_"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper.done_callback_()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper.feedback_callback_"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper.feedback_callback_()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper.get_results"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper.get_results()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper.is_done"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper.is_done()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper.is_running"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper.is_running()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper.reset_client_states"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper.reset_client_states()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.ActionClientHelper.send_goal"><code class="docutils literal notranslate"><span class="pre">ActionClientHelper.send_goal()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#scripts.helper.InterfaceHelper"><code class="docutils literal notranslate"><span class="pre">InterfaceHelper</span></code></a><ul>
+<li><a class="reference internal" href="#scripts.helper.InterfaceHelper.battery_callback_"><code class="docutils literal notranslate"><span class="pre">InterfaceHelper.battery_callback_()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.InterfaceHelper.init_robot_pose"><code class="docutils literal notranslate"><span class="pre">InterfaceHelper.init_robot_pose()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.InterfaceHelper.is_battery_low"><code class="docutils literal notranslate"><span class="pre">InterfaceHelper.is_battery_low()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.helper.InterfaceHelper.reset_states"><code class="docutils literal notranslate"><span class="pre">InterfaceHelper.reset_states()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
         </div>
@@ -88,17 +108,224 @@
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </section>
-<section id="module-scripts.finite_statemachine">
-<span id="finite-state-machine-module"></span><h1>Finite State Machine Module<a class="headerlink" href="#module-scripts.finite_statemachine" title="Permalink to this heading"></a></h1>
+<section id="finite-state-machine-module">
+<h1>Finite State Machine Module<a class="headerlink" href="#finite-state-machine-module" title="Permalink to this heading"></a></h1>
 </section>
-<section id="module-scripts.robot_states">
-<span id="robot-states-module"></span><h1>Robot States Module<a class="headerlink" href="#module-scripts.robot_states" title="Permalink to this heading"></a></h1>
+<section id="robot-states-module">
+<h1>Robot States Module<a class="headerlink" href="#robot-states-module" title="Permalink to this heading"></a></h1>
 </section>
-<section id="module-scripts.load_environment">
-<span id="load-environment-module"></span><h1>Load Environment Module<a class="headerlink" href="#module-scripts.load_environment" title="Permalink to this heading"></a></h1>
+<section id="load-environment-module">
+<h1>Load Environment Module<a class="headerlink" href="#load-environment-module" title="Permalink to this heading"></a></h1>
 </section>
 <section id="module-scripts.helper">
 <span id="helper-module"></span><h1>Helper Module<a class="headerlink" href="#module-scripts.helper" title="Permalink to this heading"></a></h1>
+<span class="target" id="module-helper"></span><dl class="simple">
+<dt>Clients:</dt><dd><p>:armor_client- A client designed for communication with the aRMOR server.
+:motion/planner- A client responsible for communicating with the planner server, enabling the planning of a random path with via points.
+:motion/controller- A client designed for communication with the controller server, responsible for following the path provided by the planner server.</p>
+</dd>
+<dt>Subscribers:</dt><dd><p>:state/battery_low- The battery state (high or low) is broadcast or published.</p>
+</dd>
+<dt>Servers:</dt><dd><p>:state/set_pose- A server responsible for updating or setting the current robot pose within the robot-states node.</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scripts.helper.</span></span><span class="sig-name descname"><span class="pre">ActionClientHelper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">service_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">done_callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feedback_callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mutex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt><cite>ActionClientHelper</cite> is a class or module likely designed to assist in the usage and management of action clients, typically in the context of a ROS (Robot Operating System) application. It may provide</dt><dd><p>functionality to interact with action servers and handle actions efficiently.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper.cancel_goals">
+<span class="sig-name descname"><span class="pre">cancel_goals</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper.cancel_goals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper.cancel_goals" title="Permalink to this definition"></a></dt>
+<dd><p>Function to halt the computation of the action server.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper.done_callback_">
+<span class="sig-name descname"><span class="pre">done_callback_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper.done_callback_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper.done_callback_" title="Permalink to this definition"></a></dt>
+<dd><p>A function that is triggered when the action server completes its computation.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Args:</dt><dd><p>status: status of the action server
+results: results from the action server</p>
+</dd>
+<dt>Returns:</dt><dd><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper.feedback_callback_">
+<span class="sig-name descname"><span class="pre">feedback_callback_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feedback</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper.feedback_callback_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper.feedback_callback_" title="Permalink to this definition"></a></dt>
+<dd><p>A function invoked when the action server needs to provide feedback to the client.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>feedback</strong> – feedback message to be sent to the client</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper.get_results">
+<span class="sig-name descname"><span class="pre">get_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper.get_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper.get_results" title="Permalink to this definition"></a></dt>
+<dd><p>A function that retrieves the result generated by the action server.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Result of the action server, if any, ‘None’ otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper.is_done">
+<span class="sig-name descname"><span class="pre">is_done</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper.is_done"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper.is_done" title="Permalink to this definition"></a></dt>
+<dd><p>A function that returns <cite>True</cite> if the action server has completed its computation and <cite>False</cite> otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns <cite>True</cite> if the action server has completed its computation and <cite>False</cite> otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper.is_running">
+<span class="sig-name descname"><span class="pre">is_running</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper.is_running"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper.is_running" title="Permalink to this definition"></a></dt>
+<dd><p>A function that returns <cite>True</cite> if the action server is currently running and <cite>False</cite> otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Indicates <cite>True</cite> if the action server is in an active state and <cite>False</cite> if it’s not running.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper.reset_client_states">
+<span class="sig-name descname"><span class="pre">reset_client_states</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper.reset_client_states"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper.reset_client_states" title="Permalink to this definition"></a></dt>
+<dd><p>A function that resets the client’s stored state variables within this class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.ActionClientHelper.send_goal">
+<span class="sig-name descname"><span class="pre">send_goal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">goal</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#ActionClientHelper.send_goal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.ActionClientHelper.send_goal" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>In the ROS architecture, only one client can send a new goal to the action server at a given time, as the server must not be running when a new goal is provided, simplifying the handling of concurrent
+requests.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>goal</strong> (<em>PlanGoal</em>) – The goal to be transmitted consists of two Points, one representing the start point and the other indicating the target point, both specified in (x, y) coordinates.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.helper.InterfaceHelper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scripts.helper.</span></span><span class="sig-name descname"><span class="pre">InterfaceHelper</span></span><a class="reference internal" href="_modules/scripts/helper.html#InterfaceHelper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.InterfaceHelper" title="Permalink to this definition"></a></dt>
+<dd><p>This class serves to separate the implementation of the Finite State Machine from the stimuli that trigger state transitions. It handles synchronization with subscribers and action servers, enhancing modularity
+and organization in the system architecture.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.InterfaceHelper.battery_callback_">
+<span class="sig-name descname"><span class="pre">battery_callback_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#InterfaceHelper.battery_callback_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.InterfaceHelper.battery_callback_" title="Permalink to this definition"></a></dt>
+<dd><p>A subscriber function responsible for receiving messages published by the <cite>robot_state</cite> node on the <cite>/state/battery_low/</cite> topic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>msg</strong> (<em>Bool</em>) – battery status</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.InterfaceHelper.init_robot_pose">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">init_robot_pose</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#InterfaceHelper.init_robot_pose"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.InterfaceHelper.init_robot_pose" title="Permalink to this definition"></a></dt>
+<dd><p>A function responsible for updating the robot’s current position, stored within the <cite>robot_state</cite> node.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>point</strong> (<em>Point</em>) – A point that represents the robot’s pose using (x, y) coordinates.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.InterfaceHelper.is_battery_low">
+<span class="sig-name descname"><span class="pre">is_battery_low</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#InterfaceHelper.is_battery_low"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.InterfaceHelper.is_battery_low" title="Permalink to this definition"></a></dt>
+<dd><p>A function designed to retrieve the state variable related to the battery level encoded within this class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns <cite>True</cite> if the battery is in a low state, and <cite>False</cite> otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.helper.InterfaceHelper.reset_states">
+<span class="sig-name descname"><span class="pre">reset_states</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/helper.html#InterfaceHelper.reset_states"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.helper.InterfaceHelper.reset_states" title="Permalink to this definition"></a></dt>
+<dd><p>A function designed to reset the stimulus related to the battery, stored as a state variable, under the assumption that no states of the Finite State Machine run concurrently.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
@@ -109,7 +336,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Ankur Kohli.</p>
+    <p>&#169; Copyright 2024, Ankur Kohli.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

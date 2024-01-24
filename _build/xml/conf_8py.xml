@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="conf_8py" kind="file" language="Python">
     <compoundname>conf.py</compoundname>
-    <innerclass refid="classconf_1_1_mock_module" prot="public">conf::MockModule</innerclass>
     <innernamespace refid="namespaceconf">conf</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -17,116 +16,68 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Project<sp/>information<sp/>-----------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>subprocess</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>mock</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>mock<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MagicMock</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>unittest.mock<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MagicMock</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>subprocess</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">sys.path.insert(0,<sp/>os.path.abspath(</highlight><highlight class="stringliteral">&apos;.&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">subprocess.call(</highlight><highlight class="stringliteral">&apos;doxygen<sp/>Doxyfile.in&apos;</highlight><highlight class="normal">,<sp/>shell=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#--<sp/>Project<sp/>information<sp/>-----------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>mod<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>[</highlight><highlight class="stringliteral">&apos;maya.cmds&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;pymel.core&apos;</highlight><highlight class="normal">]:<sp/></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.modules[mod]<sp/>=<sp/>mock.MagicMock()</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#sys.path.insert(0,<sp/>os.path.abspath(&apos;..&apos;))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal">sys.path.insert(0,<sp/></highlight><highlight class="stringliteral">&apos;/root/ros_ws/src/assignment_1&apos;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#sys.path.insert(0,<sp/>os.path.abspath(&apos;../..&apos;))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal">subprocess.call(</highlight><highlight class="stringliteral">&apos;doxygen<sp/>Doxyfile.in&apos;</highlight><highlight class="normal">,<sp/>shell=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">project<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Adaptive<sp/>Autonomous<sp/>Surveillance<sp/>Robot<sp/>for<sp/>Indoor<sp/>Environments<sp/>with<sp/>Energy<sp/>Management&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">copyright<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;2024,<sp/>Ankur<sp/>Kohli&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">author<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Ankur<sp/>Kohli&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">release<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;1.0&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>General<sp/>configuration<sp/>---------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Project<sp/>information<sp/>-----------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal">project<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Adaptive<sp/>Autonomous<sp/>Surveillance<sp/>Robot<sp/>for<sp/>Indoor<sp/>Environments<sp/>with<sp/>Energy<sp/>Management&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal">copyright<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;2023,<sp/>Ankur<sp/>Kohli&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal">author<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;Ankur<sp/>Kohli&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal">release<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;1.0&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>General<sp/>configuration<sp/>---------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">#<sp/>https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>any<sp/>Sphinx<sp/>extension<sp/>module<sp/>names<sp/>here,<sp/>as<sp/>strings.<sp/>They<sp/>can<sp/>be</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">#<sp/>extensions<sp/>coming<sp/>with<sp/>Sphinx<sp/>(named<sp/>&apos;sphinx.ext.*&apos;)<sp/>or<sp/>your<sp/>custom</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">#<sp/>ones.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal">extensions<sp/>=<sp/>[</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.autodoc&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.doctest&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.intersphinx&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.todo&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.coverage&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.mathjax&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.ifconfig&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.viewcode&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.githubpages&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sphinx.ext.napoleon&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.inheritance_diagram&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;breathe&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal">]</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">#autodoc_mock_imports<sp/>=<sp/>[&quot;scripts.finite_statemachine&quot;,<sp/>&quot;scripts.robot_states&quot;,<sp/>&quot;scripts.load_environment&quot;,<sp/>&quot;scripts.helper&quot;]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56" refid="classconf_1_1_mock_module" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classconf_1_1_mock_module" kindref="compound">MockModule</ref>(MagicMock):</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>__all__<sp/>=<sp/>[]</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal">MOCK_MODULES<sp/>=<sp/>[</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;scripts.finite_statemachine&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;scripts.robot_states&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;scripts.load_environment&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;scripts.helper&apos;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="64"><highlight class="normal">]</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal">sys.modules.update((mod_name,<sp/><ref refid="classconf_1_1_mock_module" kindref="compound">MockModule</ref>())<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>mod_name<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>MOCK_MODULES)</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>this<sp/>line<sp/>to<sp/>include<sp/>functions<sp/>in<sp/>the<sp/>mock<sp/>(replace<sp/>&apos;function_name&apos;<sp/>with<sp/>the<sp/>actual<sp/>function<sp/>names)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal">autodoc_mock_functions<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;scripts.finite_statemachine.*&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;scripts.robot_states.*&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;scripts.load_environment.*&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;scripts.helper.*&quot;</highlight><highlight class="normal">]</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Exclude<sp/>mocked<sp/>modules<sp/>from<sp/>autodoc</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">skip_mocked_members(app,<sp/>what,<sp/>name,<sp/>obj,<sp/>skip,<sp/>options):</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>name<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>MOCK_MODULES:</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacesetup" kindref="compound">setup</ref>(app):</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>app.connect(</highlight><highlight class="stringliteral">&quot;autodoc-skip-member&quot;</highlight><highlight class="normal">,<sp/>skip_mocked_members)</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>any<sp/>paths<sp/>that<sp/>contain<sp/>templates<sp/>here,<sp/>relative<sp/>to<sp/>this<sp/>directory.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal">templates_path<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;_templates&apos;</highlight><highlight class="normal">]</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">#<sp/>List<sp/>of<sp/>patterns,<sp/>relative<sp/>to<sp/>source<sp/>directory,<sp/>that<sp/>match<sp/>files<sp/>and</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">#<sp/>directories<sp/>to<sp/>ignore<sp/>when<sp/>looking<sp/>for<sp/>source<sp/>files.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>pattern<sp/>also<sp/>affects<sp/>html_static_path<sp/>and<sp/>html_extra_path.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal">exclude_patterns<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;_build&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Thumbs.db&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.DS_Store&apos;</highlight><highlight class="normal">]</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Options<sp/>for<sp/>HTML<sp/>output<sp/>-------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">#<sp/>https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal">highlight_language<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;c++&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal">source_suffix<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;.rst&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal">master_doc<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;index&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal">html_theme<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;sphinx_rtd_theme&apos;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>any<sp/>paths<sp/>that<sp/>contain<sp/>custom<sp/>static<sp/>files<sp/>(such<sp/>as<sp/>style<sp/>sheets)<sp/>here,</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">#<sp/>relative<sp/>to<sp/>this<sp/>directory.<sp/>They<sp/>are<sp/>copied<sp/>after<sp/>the<sp/>builtin<sp/>static<sp/>files,</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">#<sp/>so<sp/>a<sp/>file<sp/>named<sp/>&quot;default.css&quot;<sp/>will<sp/>overwrite<sp/>the<sp/>builtin<sp/>&quot;default.css&quot;.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal">html_static_path<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;_static&apos;</highlight><highlight class="normal">]</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Extension<sp/>configuration<sp/>-------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Options<sp/>for<sp/>intersphinx<sp/>extension<sp/>---------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Example<sp/>configuration<sp/>for<sp/>intersphinx:<sp/>refer<sp/>to<sp/>the<sp/>Python<sp/>standard<sp/>library.<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">#intersphinx_mapping<sp/>=<sp/>{&apos;https://docs.python.org/&apos;:<sp/>None}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal">intersphinx_mapping<sp/>=<sp/>{</highlight><highlight class="stringliteral">&apos;python&apos;</highlight><highlight class="normal">:<sp/>(</highlight><highlight class="stringliteral">&apos;https://docs.python.org/&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)}</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Options<sp/>for<sp/>todo<sp/>extension<sp/>----------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">#<sp/>If<sp/>true,<sp/>`todo`<sp/>and<sp/>`todoList`<sp/>produce<sp/>output,<sp/>else<sp/>they<sp/>produce<sp/>nothing.<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal">todo_include_todos<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Options<sp/>for<sp/>breathe</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal">breathe_projects<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Adaptive_Autonomous_Surveillance_Robot_for_Indoor_Environments_with_Energy_Management&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;_build/xml/&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="117"><highlight class="normal">breathe_default_project<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Adaptive_Autonomous_Surveillance_Robot_for_Indoor_Environments_with_Energy_Managemen&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal">breathe_default_members<sp/>=<sp/>(</highlight><highlight class="stringliteral">&apos;members&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;undoc-members&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">extensions<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.autodoc&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.doctest&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.intersphinx&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.todo&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.coverage&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.mathjax&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.ifconfig&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.viewcode&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.githubpages&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sphinx.ext.napoleon&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;sphinx.ext.inheritance_diagram&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;breathe&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">]</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">templates_path<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;_templates&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">exclude_patterns<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;_build&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Thumbs.db&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;.DS_Store&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Options<sp/>for<sp/>HTML<sp/>output<sp/>-------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">#<sp/>https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">highlight_language<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;c++&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">source_suffix<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;.rst&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">master_doc<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;index&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">html_theme<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;sphinx_rtd_theme&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Add<sp/>any<sp/>paths<sp/>that<sp/>contain<sp/>custom<sp/>static<sp/>files<sp/>(such<sp/>as<sp/>style<sp/>sheets)<sp/>here,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">#<sp/>relative<sp/>to<sp/>this<sp/>directory.<sp/>They<sp/>are<sp/>copied<sp/>after<sp/>the<sp/>builtin<sp/>static<sp/>files,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">#<sp/>so<sp/>a<sp/>file<sp/>named<sp/>&quot;default.css&quot;<sp/>will<sp/>overwrite<sp/>the<sp/>builtin<sp/>&quot;default.css&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">html_static_path<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;_static&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Extension<sp/>configuration<sp/>-------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Options<sp/>for<sp/>intersphinx<sp/>extension<sp/>---------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Example<sp/>configuration<sp/>for<sp/>intersphinx:<sp/>refer<sp/>to<sp/>the<sp/>Python<sp/>standard<sp/>library.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">intersphinx_mapping<sp/>=<sp/>{</highlight><highlight class="stringliteral">&apos;https://docs.python.org/&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Options<sp/>for<sp/>todo<sp/>extension<sp/>----------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">#<sp/>If<sp/>true,<sp/>`todo`<sp/>and<sp/>`todoList`<sp/>produce<sp/>output,<sp/>else<sp/>they<sp/>produce<sp/>nothing.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">todo_include_todos<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">#<sp/>--<sp/>Options<sp/>for<sp/>breathe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">breathe_projects<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Adaptive_Autonomous_Surveillance_Robot_for_Indoor_Environments_with_Energy_Management&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;_build/xml/&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">breathe_default_project<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Adaptive_Autonomous_Surveillance_Robot_for_Indoor_Environments_with_Energy_Management&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">breathe_default_members<sp/>=<sp/>(</highlight><highlight class="stringliteral">&apos;members&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;undoc-members&apos;</highlight><highlight class="normal">)</highlight></codeline>
     </programlisting>
     <location file="conf.py"/>
   </compounddef>
