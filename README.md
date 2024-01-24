@@ -309,7 +309,7 @@ To elevate the system's capabilities, several technical enhancements can be inco
 
 ## Documentation
 
-For the documentation os the assignmnet [click here](https://ankurkohli007.github.io/Experimental_Robotics_Laboratory_Assignment_I/).
+For the documentation of the assignmnet [click here](https://ankurkohli007.github.io/Experimental_Robotics_Laboratory_Assignment_I/).
 
 ## Author & Contacts
 
