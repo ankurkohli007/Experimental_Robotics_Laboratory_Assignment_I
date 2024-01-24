@@ -248,6 +248,15 @@ Also, the smach_viewer in **tree view** as show in figure below:
     <em>smach_viewer Tree View</em>
 </p> 
 
+## Working Hypothesis
+
+To achieve the outlined objectives in the introduction, the author formulated several hypotheses:
+
+- In the absence of urgent rooms, the robot continually examines the corridors.
+- Corridors are not evaluated for urgency, as the robot predominantly remains within the corridor, and each time it checks a room, it inevitably examines the connected corridor as well.
+- The battery autonomy time is set to 2 minutes, after which the robot is required to return to room E. Despite the drawback of a 2-minute recharge time, the author deemed it necessary for simulation accuracy, ensuring the algorithm functions correctly (i.e., the robot focuses on checking corridors until a room becomes urgent). When recharging is necessary and room E is not directly reachable, the robot moves randomly until room E becomes accessible.
+- The urgency threshold, a parameter adjustable in the [`topological_map.owl`](https://github.com/buoncubi/topological_map/blob/main/topological_map.owl) file, is set to 50 seconds for simulation purposes. If the threshold is too small, the robot may find itself continuously checking the connected rooms in a corridor.
+
 
 
 
