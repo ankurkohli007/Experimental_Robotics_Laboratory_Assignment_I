@@ -161,7 +161,7 @@ def disj_inds(self, inds):
     else:
         raise ArmorServiceInternalError(res.error_description, res.exit_code)
 ```
-The executer should copy and add this function in the script to make the software work correctly.
+The executer should copy and add this function in the script to make the software work correctly. Additionally, user can also refer to [this page](https://github.com/EmaroLab/armor/issues/7) to overcome the issues.
 
 ### Running 
 
