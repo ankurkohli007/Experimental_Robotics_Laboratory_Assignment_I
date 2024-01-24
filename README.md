@@ -36,15 +36,19 @@ The above scenario is shown below:
 ## Software Architecture
 
 **1. [aRMOR](https://github.com/EmaroLab/armor)**
+
 aRMOR is employed for loading the topological map and managing manipulation and query classes. The finite state machine is implemented within the ROS environment, utilizing the [ROS SMACH](https://wiki.ros.org/smach) package.
 
 **2. [Protege](https://protege.stanford.edu/)**
+
 Protégé is used to construct the topological map and establish the logical component. Its flexible plug-in architecture allows for customization to develop ontology-based applications of varying complexity. By combining Protégé's results with rule systems or other problem-solving tools, developers can create diverse intelligent systems.
 
 **3. [arch_skeleton](https://github.com/buoncubi/arch_skeleton)**
+
 This repository aims to simulate a behavioral architecture using ROS-based software. It serves a dual purpose by providing examples of ROS software and offering guidelines for bootstrapping robotics software architecture.
 
 **4. State Machine**
+
 The SMACH state machine controls the robot's state based on topological ontology map reasoning and the robot's battery status. The robot's states include:
 
 * **Load Map:** The initial state involves building a semantic map for the robot. The robot arm moves along desired trajectories, and the state exits when sufficient room IDs are detected, returning the status of map_loaded.
@@ -175,7 +179,7 @@ roslaunch assignment_1 exprob_assg1.launch
 The gif below shows the code perfomance and the final outcome of the assignment.
 
 <p align="center">
-  <img width="1000" height="800" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/b551b080ca777d71fb59df6c00a52037cc033372/final_outcome.gif">
+  <img width="1200" height="800" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/b551b080ca777d71fb59df6c00a52037cc033372/final_outcome.gif">
 </p>
 
 <p align="center">
