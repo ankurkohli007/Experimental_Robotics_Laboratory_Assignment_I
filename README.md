@@ -62,7 +62,7 @@ The component diagram delineates the architecture of the mobile robot system, sh
 </p>
 
 <p align="center">
-    <em>Final Output</em>
+    <em>Component Diagram</em>
 </p> 
 
 
