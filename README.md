@@ -197,7 +197,7 @@ At the core of all nodes lies the pivotal mechanism that signals state changes. 
 </p>
 
 <p align="center">
-    <em>Final Output</em>
+    <em>finite_statemachine</em>
 </p> 
 
 #### `helper.py`
@@ -217,8 +217,16 @@ This node aids in simulating various aspects, including the battery status, and 
 </p>
 
 <p align="center">
-    <em>Final Output</em>
+    <em>robot_states</em>
 </p> 
+
+### SMACH Viewer
+
+To observe and visualize the dynamic transitions in the robot's states of the above performance of the task, execute the following command to run the `smach_viewer`:
+
+```bashscript
+rosrun smach_viewer smach_viewer.py
+```
 
 
 
