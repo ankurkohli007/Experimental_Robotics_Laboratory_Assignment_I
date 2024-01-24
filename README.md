@@ -55,7 +55,29 @@ The SMACH state machine controls the robot's state based on topological ontology
 
 ## Component Diagarm 
 
-The component diagram delineates the architecture of the mobile robot system, showcasing key components and their interactions. At the core is the ROS SMACH state machine, orchestrating the robot's behavior through modular states and transitions. The integration of [armor_py_api](https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py) and ontology construction contributes to the system's semantic understanding, guiding state transitions based on encoded information. External user interaction is represented, emphasizing the system's responsiveness to user input and the minimization of wait times. The `smach_viewer` is illustrated as an external tool, providing a graphical representation of the state machine for enhanced visualization. A dedicated state for battery recharge indicates the system's autonomy in managing energy resources. Collectively, the component diagram offers a succinct depiction of the mobile robot's architecture, highlighting the synergy among components for dynamic and user-responsive functionality.
+The component diagram delineates the architecture of the mobile robot system, showcasing key components and their interactions. At the core is the ROS SMACH state machine, orchestrating the robot's behavior through modular states and transitions. The integration of [armor_py_api](https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py) and ontology construction contributes to the system's semantic understanding, guiding state transitions based on encoded information. External user interaction is represented, emphasizing the system's responsiveness to user input and the minimization of wait times. The `smach_viewer` is illustrated as an external tool, providing a graphical representation of the state machine for enhanced visualization. A dedicated state for battery recharge indicates the system's autonomy in managing energy resources. Collectively, the component diagram offers a succinct depiction of the mobile robot's architecture, highlighting the synergy among components for dynamic and user-responsive functionality. The figure below depicts the component diagram of the assignment:
+
+<p align="center">
+  <img width="1000" height="1000" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/66667b3e2128ea0f33df81780acd4ae365ae6b5b/uml_diag.png">
+</p>
+
+<p align="center">
+    <em>Final Output</em>
+</p> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <p align="center">
   <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
