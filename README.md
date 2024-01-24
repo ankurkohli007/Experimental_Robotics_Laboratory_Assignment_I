@@ -300,3 +300,13 @@ The robot's battery consumption is influenced by movement, and it remains statio
 An improvement involves enhancing the robot's awareness of more urgent rooms, even if they are not directly accessible. Employing a similar method used for reaching the recharging room could optimize the robot's navigation.
 
 To elevate the system's capabilities, several technical enhancements can be incorporated. Introducing a world component could provide a more effective visualization of the robot's behavior. Considering the presence of walls, the world, and the `/laser_scan `topic could be leveraged to develop an obstacle avoidance node. Furthermore, incorporating control over the robot's speed can be achieved by utilizing the `/cmd_vel` topic to generate velocity commands. These enhancements aim to refine the system's overall functionality and navigation capabilities.
+
+## Documentation
+
+For the documentation os the assignmnet [click here](https://ankurkohli007.github.io/Experimental_Robotics_Laboratory_Assignment_I/).
+
+## Author & Contacts
+
+[Ankur Kohli](https://github.com/ankurkohli007); ankurkohli1997007@gmail.com
+
+
