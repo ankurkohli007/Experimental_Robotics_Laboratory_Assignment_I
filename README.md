@@ -16,6 +16,26 @@ In the evolving landscape of robotics and artificial intelligence, the deploymen
 
 The contents of this repository feature a software solution built on the Robot Operating System (ROS), simulating the intricate behavioral architecture of a mobile robot as it dynamically moves through different rooms. This assignment leverages the [ROS SMACH](https://wiki.ros.org/smach) state machine and employs the [armor_py_api](https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py), a tool provided by the [EMARO Lab](https://github.com/EmaroLab) at the [University of Genoa (UniGe), Italy](https://unige.it/en), to construct a comprehensive ontology. Notably, a critical focal point of this exercise revolves around achieving optimal synchronization between the robot's actions and user interactions. The design places paramount importance on minimizing any waiting time for the user, ensuring a seamless experience, with the exception of necessary intervals when the robot is in the process of recharging its battery.
 
+In this scenario, the robot's behavior unfolds as follows:
+
+* The robot begins in room E and initiates the map-loading process.
+* If the map is successfully loaded, the robot commences its movement through the corridors; otherwise, it remains within room E.
+* The robot evaluates its battery status, and if it is fully charged, the robot explores other rooms. However, if the battery is not at full capacity, the robot returns to room E for recharging.
+* Once the battery is completely charged, the robot resumes its exploration of the various rooms.
+
+The above scenario is shown below:
+
+<p align="center">
+  <img width="600" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/0a58201b93abaf209ae51218e42a83f1819e6c0d/environment.png">
+</p>
+
+<p align="center">
+    <em>2D Environment</em>
+</p> 
+
+
+
+
 
 <p align="center">
   <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
