@@ -65,6 +65,25 @@ The component diagram delineates the architecture of the mobile robot system, sh
     <em>Component Diagram</em>
 </p> 
 
+Here, the structure of the ROS nodes can be seen, along with the topics, services and action servers that link them together.
+
+### `robot_states`
+This component serves as the interface between the robot's state and other nodes. Specifically, it shares information about the robot's pose, the next goal, and the battery status. Additionally, it accepts pose updates to keep the ontology's current pose accurate and responds to requests to change the battery mode, either to charging or discharging.
+
+### `controller`
+This module accepts the plan via an action server, which, in this simulation, consists of a single goal. The plan is relayed from the behavior component, which, in turn, receives it from the planner component. The module then guides the robot through the plan. It notifies the behavior module upon reaching the final destination or in case of failure.
+
+Additionally, this module oversees the management of the robot's battery charging.
+
+In the simulated program, only adjacent locations are deemed reachable. Consequently, the controller always has just one waypoint to navigate towards. As a result, this component simulates its operations using busy waiting.
+
+### `planner`
+
+This module accepts the subsequent goal from the behavior component, which, in turn, obtains it from the owl_interface component. It then computes the shortest path to achieve the goal, generating a set of via points. These via points are subsequently transmitted to the controller component through the behavior module.
+
+Given the constraints of the simulated program, where solely adjacent movements are allowed, the planner module doesn't actively perform computations. Instead, it simulates its operations using busy waiting.
+
+
 
 
 
