@@ -108,6 +108,12 @@ In the event of a low battery signal, which holds the highest priority, the soft
 To utilize this software effectively, the user should adhere to the following steps for installing the necessary packages and repositories.
 
 * As the author opted to utilize the files [``planner.py``](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/planner.py) and [``controller.py``](https://github.com/buoncubi/arch_skeleton/blob/main/scripts/controller.py) from the [arch_skeleton](https://github.com/buoncubi/arch_skeleton) repository, along with the [topological_map.owl](https://github.com/buoncubi/topological_map/blob/main/topological_map.owl) file from the [topological_map](https://github.com/buoncubi/topological_map) repository— both authored by [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq) and the user is required to clone the aforementioned repositories along with the current one into the ROS workspace.
+
+_**Note:**_ For the full documentation of the aRMOR, please refer the below link:
+
+1. [ArmorManipulation](http://emarolab.github.io/armor_py_api/armor_manipulation_client.html)
+2. [ArmorPy - Easy Ontology managament in ROS](http://emarolab.github.io/armor_py_api/)
+
 * This package, being dependent on [aRMOR](https://github.com/EmaroLab/armor), must be installed according to the instructions outlined in the provided link as a prerequisite for running this package.
 * Additionally, it has a dependency on [SMACH](https://wiki.ros.org/smach), which can be installed by using the following commands:
 
