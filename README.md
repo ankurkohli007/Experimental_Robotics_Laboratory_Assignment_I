@@ -228,7 +228,15 @@ To observe and visualize the dynamic transitions in the robot's states of the ab
 rosrun smach_viewer smach_viewer.py
 ```
 
+The figure below shows the smach_viewer outcome i.e. change in states in graphical view:
 
+<p align="center">
+  <img width="800" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/dc2d62270d470af1f1590ff9a405507adeca33de/smach_viewer.png">
+</p>
+
+<p align="center">
+    <em>smach_viewer Graphical View</em>
+</p> 
 
 
 
