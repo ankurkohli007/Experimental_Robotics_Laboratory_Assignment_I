@@ -261,19 +261,19 @@ To achieve the outlined objectives in the introduction, the author formulated se
 
 ### Limitations
 
-#### Path Planning Algorithm
+###### Path Planning Algorithm
 
 The current system restricts viable targets to adjacent rooms, eliminating the need for a comprehensive path-planning algorithm. An exception arises when the robot's battery is low, and it resides in 'R2' or 'R4.' In such cases, a random goal is selected, leading the robot to a corridor adjacent to 'E.' However, for larger and more intricate maps, the implementation of a sophisticated path-planning algorithm, like the A* Search Algorithm, becomes essential.
 
-#### Enhanced Battery Management
+###### Enhanced Battery Management
 
 The existing battery management lacks robustness, risking battery depletion before the robot reaches a charging station. For larger maps, thresholds for low or critical battery levels should dynamically consider the robot's proximity to charging stations. Introducing a low power mode during idle periods would optimize battery utilization.
 
-#### Optimization for Time and Resource Efficiency
+###### Optimization for Time and Resource Efficiency
 
 The execution time of the current system is a concern, requiring improvements for efficient operation. Additionally, the robot's limitations, such as recharging only in room E and a maximum charge capacity, pose constraints. To address these, considering a low power mode during idle times and optimizing battery thresholds based on distance from charging stations can enhance overall system efficiency.
 
-#### Battery Level Considerations
+###### Battery Level Considerations
 
 The robot's battery consumption is influenced by movement, and it remains stationary in a room without consuming battery. If the battery level drops to 7%, room E is marked as the first urgent case for the robot to visit. These considerations aim to ensure effective battery usage and prioritize urgent cases in the system's decision making process.
 
