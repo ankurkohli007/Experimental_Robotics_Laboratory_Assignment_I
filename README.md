@@ -33,8 +33,25 @@ The above scenario is shown below:
     <em>2D Environment</em>
 </p> 
 
+## Software Architecture
 
+**1. [aRMOR](https://github.com/EmaroLab/armor)**
+aRMOR is employed for loading the topological map and managing manipulation and query classes. The finite state machine is implemented within the ROS environment, utilizing the [ROS SMACH](https://wiki.ros.org/smach) package.
 
+**2. [Protege](https://protege.stanford.edu/)**
+Protégé is used to construct the topological map and establish the logical component. Its flexible plug-in architecture allows for customization to develop ontology-based applications of varying complexity. By combining Protégé's results with rule systems or other problem-solving tools, developers can create diverse intelligent systems.
+
+**3. [arch_skeleton](https://github.com/buoncubi/arch_skeleton)**
+This repository aims to simulate a behavioral architecture using ROS-based software. It serves a dual purpose by providing examples of ROS software and offering guidelines for bootstrapping robotics software architecture.
+
+**4. State Machine**
+The SMACH state machine controls the robot's state based on topological ontology map reasoning and the robot's battery status. The robot's states include:
+
+* **Load Map: **The initial state involves building a semantic map for the robot. The robot arm moves along desired trajectories, and the state exits when sufficient room IDs are detected, returning the status of map_loaded.
+* **Moving in Corridors:** The robot moves to a desired location with enabled battery consumption. The ontology is updated as the robot moves. If the battery drops below a threshold, the target room is canceled.
+* **Discover Room: **The state where the robot explores the target room, enabling the robot arm's movement.
+* **Moving for Charging:** This state occurs when the battery is low, and the robot moves towards the charger. The ontology is updated during movement until the robot reaches the charger.
+* **Charging Station:** The state activates when the robot reaches the charging station and recharges the battery. The battery level is updated over time, and the state transitions to "charged."
 
 
 <p align="center">
