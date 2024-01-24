@@ -257,7 +257,7 @@ rosrun rqt_graph rqt_graph
 ```
 
 <p align="center">
-  <img width="1000" height="500" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/389ac68dea900ec56e058dd069b42270d53445c4/rqt.png">
+  <img width="1200" height="500" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/389ac68dea900ec56e058dd069b42270d53445c4/rqt.png">
 </p>
 
 <p align="center">
@@ -300,43 +300,3 @@ The robot's battery consumption is influenced by movement, and it remains statio
 An improvement involves enhancing the robot's awareness of more urgent rooms, even if they are not directly accessible. Employing a similar method used for reaching the recharging room could optimize the robot's navigation.
 
 To elevate the system's capabilities, several technical enhancements can be incorporated. Introducing a world component could provide a more effective visualization of the robot's behavior. Considering the presence of walls, the world, and the `/laser_scan `topic could be leveraged to develop an obstacle avoidance node. Furthermore, incorporating control over the robot's speed can be achieved by utilizing the `/cmd_vel` topic to generate velocity commands. These enhancements aim to refine the system's overall functionality and navigation capabilities.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
