@@ -267,7 +267,7 @@ rosrun rqt_graph rqt_graph
 </p>
 
 <p align="center">
-    <em>smach_viewer Tree View</em>
+    <em>RQT Graph</em>
 </p> 
 
 The figure above shows the `rqt_graph`. 
