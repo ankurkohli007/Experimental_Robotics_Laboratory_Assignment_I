@@ -140,6 +140,27 @@ Here, again the ``<distro>`` denotes a package or component associated with a sp
 * Execute ``chmod +x <file_name>`` for each file inside the folder ``scripts`` of the assignment package which was cloned in the last step.
 * Execute ``catkin_make`` from the root of your ROS workspace.
 
+* **Note:** The author of the **aRMOR** developer found some issues with the function proposed in the script [armor_manipulation_client.py](https://github.com/sarasgambato/ExpRoLab_Assignment1/blob/master/scripts/armor_manipulation_client.py) to disjoint the individuals of the ontology. Hence, another function was created in the script as:
+  
+```py
+def disj_inds(self, inds):
+    try:
+        res = self._client.call('DISJOINT', 'IND', '', inds)
+
+    except rospy.ROSException:
+        raise ArmorServiceCallError("Cannot reach ARMOR client: Timeout Expired. Check if ARMOR is running.")
+
+    if res.success:
+        return res.is_consistent
+    else:
+        raise ArmorServiceInternalError(res.error_description, res.exit_code)
+```
+The executer should copy and add this function in the script to make the software work correctly.
+
+
+
+
+
 
 
 
