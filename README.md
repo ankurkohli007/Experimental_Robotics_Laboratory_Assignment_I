@@ -200,6 +200,31 @@ At the core of all nodes lies the pivotal mechanism that signals state changes. 
     <em>Final Output</em>
 </p> 
 
+#### `helper.py`
+
+Within this node, the presence of an interface helper and an action client helper significantly facilitates the tasks of the `finite_statemachine` node, streamlining its operations for enhanced efficiency.
+
+#### 'load_environment.py`
+
+This file plays a crucial role in initializing the robot, situated in location E, by loading the environmental map.
+
+#### `robot_states.py`
+
+This node aids in simulating various aspects, including the battery status, and manages responses for setting and retrieving pose information from both the planner and the controller. The figure below explains the output of `robot_states.py` script.
+
+<p align="center">
+  <img width="800" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/abb286f2945f56986311cf5fe44ab0588857d708/robot_states.png">
+</p>
+
+<p align="center">
+    <em>Final Output</em>
+</p> 
+
+
+
+
+
+
 
 
 
