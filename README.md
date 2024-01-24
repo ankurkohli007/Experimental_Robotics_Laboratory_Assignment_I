@@ -170,32 +170,36 @@ source devel/setup.bash
 roslaunch assignment_1 exprob_assg1.launch
 ```
 
+## Final Outcome
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The gif below shows the code perfomance and the final outcome of the assignment.
 
 <p align="center">
-  <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
+  <img width="1000" height="1000" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/b551b080ca777d71fb59df6c00a52037cc033372/final_outcome.gif">
 </p>
 
 <p align="center">
     <em>Final Output</em>
 </p> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
