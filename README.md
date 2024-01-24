@@ -186,6 +186,20 @@ The gif below shows the code perfomance and the final outcome of the assignment.
     <em>Final Output</em>
 </p> 
 
+### Briefing about the python scripts
+
+#### `fnite_statemachine.py`
+
+At the core of all nodes lies the pivotal mechanism that signals state changes. Two action servers play a crucial role in guiding the robot to attain specific states based on the prevailing conditions. The figure below depicts the outcome of the **`finite_statemachine.py`** script.
+
+<p align="center">
+  <img width="800" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/762fb5965d147f5d27493217e9287614dd63dd9d/finite_states.png">
+</p>
+
+<p align="center">
+    <em>Final Output</em>
+</p> 
+
 
 
 
