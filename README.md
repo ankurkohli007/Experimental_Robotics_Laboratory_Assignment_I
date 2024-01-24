@@ -309,4 +309,11 @@ For the documentation os the assignmnet [click here](https://ankurkohli007.githu
 
 [Ankur Kohli](https://github.com/ankurkohli007); ankurkohli1997007@gmail.com
 
+## aRMOR related query contacts
+
+[Prof. Carmine Tommaso Recchiuto](https://rubrica.unige.it/personale/UkNDWV1r); carmine.recchiuto@dibris.unige.it & [Prof. Luca Buoncompagni](https://rubrica.unige.it/personale/VkRGWFJq); luca.buoncompagni@edu.unige.it
+
+
+
+
 
