@@ -53,6 +53,9 @@ The SMACH state machine controls the robot's state based on topological ontology
 * **Moving for Charging:** This state occurs when the battery is low, and the robot moves towards the charger. The ontology is updated during movement until the robot reaches the charger.
 * **Charging Station:** The state activates when the robot reaches the charging station and recharges the battery. The battery level is updated over time, and the state transitions to "charged."
 
+## Component Diagarm 
+
+The component diagram delineates the architecture of the mobile robot system, showcasing key components and their interactions. At the core is the ROS SMACH state machine, orchestrating the robot's behavior through modular states and transitions. The integration of [armor_py_api](https://github.com/EmaroLab/armor_py_api/blob/master/scripts/armor_api/armor_manipulation_client.py) and ontology construction contributes to the system's semantic understanding, guiding state transitions based on encoded information. External user interaction is represented, emphasizing the system's responsiveness to user input and the minimization of wait times. The `smach_viewer` is illustrated as an external tool, providing a graphical representation of the state machine for enhanced visualization. A dedicated state for battery recharge indicates the system's autonomy in managing energy resources. Collectively, the component diagram offers a succinct depiction of the mobile robot's architecture, highlighting the synergy among components for dynamic and user-responsive functionality.
 
 <p align="center">
   <img width="1000" height="600" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/55355f42813136c9b120566bc441f17bf19d1ced/v14k.gif">
