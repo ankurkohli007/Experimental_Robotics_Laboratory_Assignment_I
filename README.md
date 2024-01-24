@@ -175,7 +175,7 @@ roslaunch assignment_1 exprob_assg1.launch
 The gif below shows the code perfomance and the final outcome of the assignment.
 
 <p align="center">
-  <img width="1000" height="1000" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/b551b080ca777d71fb59df6c00a52037cc033372/final_outcome.gif">
+  <img width="1000" height="800" src="https://github.com/ankurkohli007/Experimental_Robotics_Laboratory_Assignment_I/blob/b551b080ca777d71fb59df6c00a52037cc033372/final_outcome.gif">
 </p>
 
 <p align="center">
