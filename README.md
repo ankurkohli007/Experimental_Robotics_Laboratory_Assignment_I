@@ -140,7 +140,9 @@ Here, again the ``<distro>`` denotes a package or component associated with a sp
 * Execute ``chmod +x <file_name>`` for each file inside the folder ``scripts`` of the assignment package which was cloned in the last step.
 * Execute ``catkin_make`` from the root of your ROS workspace.
 
-#### Note: The author of the **aRMOR** developer found some issues with the function proposed in the script [armor_manipulation_client.py](https://github.com/sarasgambato/ExpRoLab_Assignment1/blob/master/scripts/armor_manipulation_client.py) to disjoint the individuals of the ontology. Hence, another function was created in the script as:
+#### Note: 
+
+The author of the **aRMOR** developer found some issues with the function proposed in the script [armor_manipulation_client.py](https://github.com/sarasgambato/ExpRoLab_Assignment1/blob/master/scripts/armor_manipulation_client.py) to disjoint the individuals of the ontology. Hence, another function was created in the script as:
   
 ```py
 def disj_inds(self, inds):
@@ -156,6 +158,18 @@ def disj_inds(self, inds):
         raise ArmorServiceInternalError(res.error_description, res.exit_code)
 ```
 The executer should copy and add this function in the script to make the software work correctly.
+
+### Running 
+
+To initialize the software architecture in conjunction with the finite state machine representation, first install ``xterm`` if it is not installed by the command ``sudo apt-get install -y xterm`` and then execute the following commands:
+
+```bashscript
+source devel/setup.bash
+```
+```bashscript
+roslaunch assignment_1 exprob_assg1.launch
+```
+
 
 
 
